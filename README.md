@@ -1,5 +1,10 @@
 # mcclowes-react-sample-project
 
+This project includes:
+- Useful dependencies
+- Reasonable project structure
+- UIKit with sample components
+
 ## Setting up the project
 
 Install dependencies
