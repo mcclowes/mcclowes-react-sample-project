@@ -1,8 +1,11 @@
-import Dumb from "../Dumb";
 import React from "react";
+import Icon from "../Icon";
+import Icons from "../Icons";
 import { shallow } from "enzyme";
 
-const defaultProps = {};
+const defaultProps = {
+  path: Icons.TICK
+};
 
 const renderComponent = newProps => {
   const props = {
@@ -10,13 +13,13 @@ const renderComponent = newProps => {
     ...newProps
   };
 
-  return shallow(<Dumb {...props} />);
+  return shallow(<Icon {...props} />);
 };
 
 let wrapper;
 
-describe("Dumb", () => {
-  it("renders component", () => {
+describe("Icon", () => {
+  it("renders as expected", () => {
     wrapper = renderComponent();
 
     expect(wrapper).toMatchSnapshot();

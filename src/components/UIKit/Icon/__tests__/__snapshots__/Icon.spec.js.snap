@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Icon renders as expected 1`] = `
+<styled.svg
+  focusable="false"
+  viewBox="0 0 32 32"
+>
+  <path
+    d="M16.35,21.34L16.35,21.34l-2.83,2.83l-2.83-2.83l-6.36-6.36l2.83-2.83l6.36,6.36L24.84,7.2l2.83,2.83L16.35,21.34z"
+  />
+</styled.svg>
+`;

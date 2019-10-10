@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Modal renders as expected 1`] = `
+<Fragment>
+  <div
+    onClick={[Function]}
+  >
+    <Modal
+      ariaHideApp={true}
+      bodyOpenClassName="ReactModal__Body--open"
+      closeTimeoutMS={400}
+      isOpen={true}
+      onRequestClose={[MockFunction]}
+      parentSelector={[Function]}
+      portalClassName="ReactModalPortal"
+      role="dialog"
+      shouldCloseOnEsc={true}
+      shouldCloseOnOverlayClick={true}
+      shouldFocusAfterRender={true}
+      shouldReturnFocusAfterClose={true}
+      style={
+        Object {
+          "content": Object {
+            "alignItems": "center",
+            "background": "none",
+            "border": "none",
+            "borderRadius": "3px",
+            "bottom": "auto",
+            "display": "flex",
+            "left": "auto",
+            "maxHeight": "90vh",
+            "maxWidth": "90vw",
+            "overflow": "hidden",
+            "padding": "0",
+            "position": "relative",
+            "right": "auto",
+            "top": "auto",
+          },
+          "overlay": Object {
+            "alignItems": "center",
+            "backgroundColor": "rgba(50,50,50,.75)",
+            "display": "flex",
+            "justifyContent": "center",
+            "transition": "opacity 200ms ease-in-out",
+            "zIndex": 1000,
+          },
+        }
+      }
+    >
+      <ContentMock />
+    </Modal>
+  </div>
+</Fragment>
+`;

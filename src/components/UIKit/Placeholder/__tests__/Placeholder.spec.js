@@ -1,4 +1,4 @@
-import Dumb from "../Dumb";
+import Placeholder from "../Placeholder";
 import React from "react";
 import { shallow } from "enzyme";
 
@@ -10,13 +10,13 @@ const renderComponent = newProps => {
     ...newProps
   };
 
-  return shallow(<Dumb {...props} />);
+  return shallow(<Placeholder {...props} />);
 };
 
 let wrapper;
 
-describe("Dumb", () => {
-  it("renders component", () => {
+describe("Placeholder", () => {
+  it("renders default component", () => {
     wrapper = renderComponent();
 
     expect(wrapper).toMatchSnapshot();
