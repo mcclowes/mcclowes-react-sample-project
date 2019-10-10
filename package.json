@@ -1,0 +1,60 @@
+{
+  "name": "mcclowes-react-sample-project",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.14.0",
+    "react": "^16.10.1",
+    "react-dom": "^16.10.1",
+    "react-helmet": "^5.2.1",
+    "react-scripts": "3.1.2",
+    "react-test-renderer": "^16.10.1",
+    "styled-components": "^4.4.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test:watch": "react-scripts test",
+    "test": "CI=true react-scripts test --env=jsdom"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged && npm test",
+      "pre-push": "npm test"
+    }
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "jest": {
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ],
+    "collectCoverageFrom": [
+      "src/**/*.js",
+      "!src/index.js"
+    ],
+    "coverageReporters": [
+      "text"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "enzyme-to-json": "^3.4.0",
+    "husky": "^3.0.7",
+    "prettier": "^1.18.2",
+    "pretty-quick": "^1.11.1"
+  }
+}

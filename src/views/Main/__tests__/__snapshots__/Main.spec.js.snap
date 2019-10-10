@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders component 1`] = `
+<styled.div>
+  <SmartContainer>
+    Hello World!
+  </SmartContainer>
+  <Dumb>
+    Make changes as you wish
+  </Dumb>
+</styled.div>
+`;
