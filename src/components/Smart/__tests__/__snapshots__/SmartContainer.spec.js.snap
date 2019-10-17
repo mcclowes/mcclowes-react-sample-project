@@ -2,7 +2,7 @@
 
 exports[`renders component 1`] = `
 <Smart
-  clicked={false}
-  setClicked={[Function]}
+  active={false}
+  setActive={[Function]}
 />
 `;

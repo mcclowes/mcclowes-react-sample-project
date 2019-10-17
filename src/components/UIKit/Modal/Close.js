@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Icon, { icons } from "../Icon";
+import Icon from "../Icon";
 
 const CloseWrapper = styled.div`
   position: absolute;

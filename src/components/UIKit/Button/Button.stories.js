@@ -1,5 +1,6 @@
-import React from "react";
 import Button from "./Button";
+import Icon from "../Icon";
+import React from "react";
 
 export default { title: "Button" };
 
@@ -9,4 +10,17 @@ export const empty = () => {
 
 export const withText = () => {
   return <Button>Hello World</Button>;
+};
+
+export const withTextProp = () => {
+  return <Button text="Hello World" />;
+};
+
+export const withIcon = () => {
+  return (
+    <Button>
+      <Icon icon="TICK" />
+      Hello World
+    </Button>
+  );
 };

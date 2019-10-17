@@ -1,20 +1,20 @@
 import React from "react";
 import { SmartWrapper } from "./csx";
+import { Button, Text } from "../UIKit";
 
 const Smart = props => {
-  const { children, clicked, setClicked } = props;
+  const { children, active, setActive } = props;
 
   return (
     <SmartWrapper>
-      <div>{clicked ? "Active" : "Not active"}</div>
+      <Text.Meta>{active ? "Active" : "Not active"}</Text.Meta>
 
-      <button
-        onClick={() => {
-          setClicked(!clicked);
+      <Button
+        doClick={() => {
+          setActive(!active);
         }}
-      >
-        Click me
-      </button>
+        text="Click me"
+      />
 
       {children}
     </SmartWrapper>

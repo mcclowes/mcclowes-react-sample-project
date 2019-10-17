@@ -1,9 +1,11 @@
 # mcclowes-react-sample-project
 
 This project includes:
+
 - Useful dependencies
 - Reasonable project structure
-- UIKit with sample components
+- Examples of dumb components (`Dumb`) and smart, controlled components (`Smart`)
+- UIKit with useful simple components
 
 ## Setting up the project
 
@@ -26,3 +28,13 @@ You can run the project's test suite with the following command:
 Or, for watch mode:
 
 `npm run test:watch`
+
+## UIKit
+
+This repo comes equipped with a few simple customisable components, in the UIKit directory. You can delete all/as many as you wish, but they are included as they offer a more customisable and flexible alternative to npm packages.
+
+### Storybook
+
+These UIKit components can be viewed by running:
+
+`npm run storybook`

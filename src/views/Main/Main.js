@@ -1,15 +1,27 @@
 import Dumb from "../../components/Dumb";
+import Nav from "../Nav";
 import React from "react";
 import Smart from "../../components/Smart";
-import { Page } from "./csx";
+import { Page, PageWrapper } from "./csx";
+import { Text } from "../../components/UIKit";
 
 const Main = props => {
   return (
-    <Page>
-      <Smart>Hello World!</Smart>
+    <>
+      <Nav />
 
-      <Dumb>Make changes as you wish</Dumb>
-    </Page>
+      <PageWrapper>
+        <Page>
+          <Smart>
+            <Text>Hello World!</Text>
+          </Smart>
+
+          <Dumb>
+            <Text>Make changes as you wish</Text>
+          </Dumb>
+        </Page>
+      </PageWrapper>
+    </>
   );
 };
 

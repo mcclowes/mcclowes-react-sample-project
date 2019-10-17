@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import Main from "./Main";
+import Alt from "./Alt";
 import { Loader } from "../../components/UIKit";
 
-const MainContainer = props => {
+const AltContainer = props => {
   // an exammple of a useful hook and loading state
   const [loading, setloading] = useState(false);
 
-  return loading ? <Loader /> : <Main {...props} />;
+  return loading ? <Loader /> : <Alt {...props} />;
 };
 
-export default MainContainer;
+export default AltContainer;

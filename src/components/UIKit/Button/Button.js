@@ -1,17 +1,14 @@
 import React from "react";
 import { ButtonWrapper } from "./csx";
-import Padded from "../Padded";
 
 const Button = props => {
-  const { children, text, to = "/", theme } = props;
-  console.log(theme);
+  const { children, text, to = "/", doClick } = props;
+
   return (
-    <Padded>
-      <ButtonWrapper theme={theme} to={to}>
-        {text}
-        {children}
-      </ButtonWrapper>
-    </Padded>
+    <ButtonWrapper onClick={doClick} to={to}>
+      {text}
+      {children}
+    </ButtonWrapper>
   );
 };
 

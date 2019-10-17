@@ -38,18 +38,14 @@ const defaultStyles = {
 if (process.env.NODE_ENV !== "test") ReactModal.setAppElement("#root");
 
 const Modal = props => {
-  const { children, doClose, open, closeIcon, modalStyles, trigger } = props;
-
-  //const { overlay, content } = modalStyles;
+  const { children, doClose, open, closeIcon, trigger } = props;
 
   const style = {
     overlay: {
       ...defaultStyles.overlay
-      //...overlay
     },
     content: {
       ...defaultStyles.content
-      //...content
     }
   };
 

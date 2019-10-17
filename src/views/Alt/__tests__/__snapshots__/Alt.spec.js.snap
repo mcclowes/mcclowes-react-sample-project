@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders component 1`] = `
+<Fragment>
+  <Nav />
+  <styled.div>
+    <styled.div>
+      <Text>
+        Made by @mcclowes
+      </Text>
+    </styled.div>
+  </styled.div>
+</Fragment>
+`;

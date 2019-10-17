@@ -9,6 +9,10 @@ export const ButtonWrapper = styled.button`
   font-size: 14px;
   padding: 0.5em 1em;
   border: 2px solid ${props => props.theme.colors.primary};
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  margin: auto;
 
   &:hover {
     opacity: 0.75;
@@ -26,4 +30,8 @@ export const ButtonWrapper = styled.button`
   ${props => (props.fill ? "width: 100%;" : "")};
 
   ${props => (props.large ? `padding: 0.75em 1.5em;` : "")};
+
+  svg {
+    margin-right: 0.5em;
+  }
 `;

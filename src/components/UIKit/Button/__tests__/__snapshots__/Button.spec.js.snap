@@ -1,21 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Button hovers 1`] = `
-<Padded>
-  <styled.button
-    to="/"
-  >
-    Default Button
-  </styled.button>
-</Padded>
+<styled.button
+  to="/"
+>
+  Default Button
+</styled.button>
 `;
 
 exports[`Button renders component 1`] = `
-<Padded>
-  <styled.button
-    to="/"
-  >
-    Default Button
-  </styled.button>
-</Padded>
+<styled.button
+  to="/"
+>
+  Default Button
+</styled.button>
 `;
