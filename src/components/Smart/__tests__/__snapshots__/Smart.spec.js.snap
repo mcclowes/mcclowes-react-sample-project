@@ -1,3 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Smart renders default component 1`] = `<styled.div />`;
+exports[`Smart renders default component 1`] = `
+<styled.div>
+  <div>
+    Not active
+  </div>
+  <button
+    onClick={[Function]}
+  >
+    Click me
+  </button>
+</styled.div>
+`;

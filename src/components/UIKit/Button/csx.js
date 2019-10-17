@@ -1,26 +1,29 @@
 import styled from "styled-components";
-import * as colors from "../../../helpers/colors";
 
-export const ButtonWrapper = styled("button")`
-  background: ${colors.button.background};
-  padding: 1em 2em;
+export const ButtonWrapper = styled.button`
+  background: red;
+  border-radius: 3px;
   border: none;
-  border-radius: 5px;
   color: white;
-  font-size: 14px;
-  width: 100%;
   cursor: pointer;
+  font-size: 14px;
+  padding: 0.5em 1em;
+  border: 2px solid red;
 
   &:hover {
-    background: ${colors.button.hover};
+    opacity: 0.75;
   }
 
   &:active {
-    background: ${colors.button.active};
+    opacity: 0.5;
   }
 
   &:focus {
     outline: none;
-    border: 2px solid ${colors.button.border};
+    border: 2px solid teal;
   }
+
+  ${props => (props.fill ? "width: 100%;" : "")};
+
+  ${props => (props.large ? `padding: 0.75em 1.5em;` : "")};
 `;

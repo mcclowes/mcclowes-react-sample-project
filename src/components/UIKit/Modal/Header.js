@@ -1,12 +1,14 @@
 import React from "react";
 import styled from "styled-components";
 
-const HeaderWrapper = styled.div``;
+const HeaderWrapper = styled.div`
+  padding: 1em;
+`;
 
 const Header = props => {
-  const { children, ...rest } = props;
+  const { children } = props;
 
-  return <HeaderWrapper {...rest}>{children}</HeaderWrapper>;
+  return <HeaderWrapper>{children}</HeaderWrapper>;
 };
 
 export default Header;

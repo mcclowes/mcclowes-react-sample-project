@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import Smart from "./Smart";
 
 const SmartContainer = props => {
-  const [loading, setloading] = useState(false);
+  const [clicked, setClicked] = useState(false);
 
-  return <Smart {...props} />;
+  return <Smart clicked={clicked} setClicked={setClicked} {...props} />;
 };
 
 export default SmartContainer;

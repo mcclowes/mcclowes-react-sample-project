@@ -1,7 +1,8 @@
 import React, { useState } from "react";
+import { LoaderWrapper } from "./csx";
 
 const Loader = () => {
-  return <span>...</span>;
+  return <LoaderWrapper />;
 };
 
 export default Loader;

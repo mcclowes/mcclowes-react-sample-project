@@ -3,12 +3,13 @@ import styled from "styled-components";
 
 const ContentWrapper = styled.div`
   min-height: 100%;
+  padding: 1em;
 `;
 
 const Content = props => {
-  const { children, ...rest } = props;
+  const { children } = props;
 
-  return <ContentWrapper {...rest}>{children}</ContentWrapper>;
+  return <ContentWrapper>{children}</ContentWrapper>;
 };
 
 export default Content;

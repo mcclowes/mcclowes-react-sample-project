@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import Icon, { Icons } from "../Icon";
+import Icon, { icons } from "../Icon";
 
-const CloseWrapper = styled("div")`
+const CloseWrapper = styled.div`
   position: absolute;
   right: 10px;
   top: 10px;
@@ -15,17 +15,32 @@ const CloseWrapper = styled("div")`
   }
 `;
 
+const CloseButton = styled.button`
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  outline: none;
+  padding: 0.5em;
+
+  &:hover {
+    background: #eee;
+  }
+`;
+
 const Close = props => {
-  const { icon, onClick, ...rest } = props;
+  const { icon, onClick } = props;
 
   return (
-    <CloseWrapper {...rest}>
+    <CloseWrapper>
       {icon ? (
         icon
       ) : (
-        <button onClick={onClick}>
-          <Icon path={Icons.CLOSE} />
-        </button>
+        <CloseButton onClick={onClick}>
+          <Icon icon="CLOSE" />
+        </CloseButton>
       )}
     </CloseWrapper>
   );

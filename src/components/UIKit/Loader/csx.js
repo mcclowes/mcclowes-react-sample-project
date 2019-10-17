@@ -1,0 +1,32 @@
+import styled from "styled-components";
+
+const LoaderWrapper = styled.div`
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+  border-radius: 50%;
+  border: 2px solid #f3f3f3;
+  border-top: 2px solid #3498db;
+  height: ${props => (props.height ? props.height : "16px")};
+  width: ${props => (props.width ? props.width : "16px")};
+
+  /* Safari */
+  @-webkit-keyframes spin {
+    0% {
+      -webkit-transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+    }
+  }
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+`;
+
+export { LoaderWrapper };

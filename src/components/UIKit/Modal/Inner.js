@@ -7,44 +7,41 @@ const InnerWrapper = styled.div`
   max-height: 100%;
   max-height: 90vh;
   max-width: 100%;
-  min-width: 680px;
+  //min-width: 680px;
+  width: 680px;
   overflow: auto;
 
   ${props =>
-    props["data-modal-size"] === "modal-mini" &&
+    props["data-modal-size"] === "mini" &&
     `
     min-width: 318px;
     max-width: 318px;
   `};
 
   ${props =>
-    props["data-modal-size"] === "modal-tiny" &&
+    props["data-modal-size"] === "tiny" &&
     `
     max-width: 500px;
     min-width: 500px;
   `};
 
   ${props =>
-    props["data-modal-size"] === "modal-small" &&
+    props["data-modal-size"] === "small" &&
     `
     max-width: 680px;
   `};
 
   ${props =>
-    props["data-modal-size"] === "modal-medium" &&
+    props["data-modal-size"] === "medium" &&
     `
     max-width: 920px;
   `};
 `;
 
 const Inner = props => {
-  const { children, size, ...rest } = props;
+  const { children, size = "small" } = props;
 
-  return (
-    <InnerWrapper data-modal-size={size && `modal-${size}`} {...rest}>
-      {children}
-    </InnerWrapper>
-  );
+  return <InnerWrapper data-modal-size={size}>{children}</InnerWrapper>;
 };
 
 export default Inner;

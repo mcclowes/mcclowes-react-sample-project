@@ -4,12 +4,13 @@ import styled from "styled-components";
 const ActionsWrapper = styled.div`
   display: flex;
   justify-content: flex-end;
+  padding: 1em;
 `;
 
 const Actions = props => {
-  const { children, ...rest } = props;
+  const { children } = props;
 
-  return <ActionsWrapper {...rest}>{children}</ActionsWrapper>;
+  return <ActionsWrapper>{children}</ActionsWrapper>;
 };
 
 export default Actions;

@@ -1,14 +1,17 @@
 import React from "react";
 import { ButtonWrapper } from "./csx";
+import Padded from "../Padded";
 
 const Button = props => {
   const { children, text, to = "/" } = props;
 
   return (
-    <ButtonWrapper to={to}>
-      {text}
-      {children}
-    </ButtonWrapper>
+    <Padded>
+      <ButtonWrapper to={to}>
+        {text}
+        {children}
+      </ButtonWrapper>
+    </Padded>
   );
 };
 

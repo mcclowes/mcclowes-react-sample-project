@@ -1,15 +1,17 @@
 import React from "react";
-import styled from "styled-components";
-
-const PlaceholderWrapper = styled.div`
-  width: 5em;
-  height: 1em;
-  opacity: 0.1;
-  background-color: #eee;
-`;
+import { PlaceholderWrapper } from "./csx";
 
 const Placeholder = props => {
-  return <PlaceholderWrapper {...props} />;
+  const { lines = 1 } = props;
+  return (
+    <>
+      {Array(lines)
+        .fill(0)
+        .map(x => (
+          <PlaceholderWrapper />
+        ))}
+    </>
+  );
 };
 
 export default Placeholder;

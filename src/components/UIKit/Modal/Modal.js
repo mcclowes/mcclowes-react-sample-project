@@ -38,26 +38,18 @@ const defaultStyles = {
 if (process.env.NODE_ENV !== "test") ReactModal.setAppElement("#root");
 
 const Modal = props => {
-  const {
-    children,
-    doClose,
-    open,
-    closeIcon,
-    modalStyles,
-    trigger,
-    ...rest
-  } = props;
+  const { children, doClose, open, closeIcon, modalStyles, trigger } = props;
 
-  const { overlay, content } = modalStyles;
+  //const { overlay, content } = modalStyles;
 
   const style = {
     overlay: {
-      ...defaultStyles.overlay,
-      ...overlay
+      ...defaultStyles.overlay
+      //...overlay
     },
     content: {
-      ...defaultStyles.content,
-      ...content
+      ...defaultStyles.content
+      //...content
     }
   };
 
@@ -73,7 +65,6 @@ const Modal = props => {
           shouldCloseOnOverlayClick={true}
           onRequestClose={doClose}
           style={style}
-          {...rest}
         >
           {closeIcon && doClose && <Close onClick={doClose} />}
 

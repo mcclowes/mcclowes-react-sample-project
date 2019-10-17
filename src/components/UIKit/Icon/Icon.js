@@ -1,14 +1,9 @@
 import React from "react";
-import styled from "styled-components";
-import Icons from "./Icons";
-
-const IconWrapper = styled.svg`
-  width: ${props => (props.width ? props.width : "16px")};
-  height: ${props => (props.height ? props.height : "16px")};
-`;
+import icons from "./icons";
+import { IconWrapper } from "./csx";
 
 const Icon = props => {
-  const { className, path, width, height, ...rest } = props;
+  const { path, width, height, icon } = props;
 
   return (
     <IconWrapper
@@ -16,13 +11,12 @@ const Icon = props => {
       focusable="false"
       width={width}
       height={height}
-      {...rest}
     >
-      <path d={path} />
+      {icon ? <path d={icons[icon]} /> : <path d={path} />}
     </IconWrapper>
   );
 };
 
 export default Icon;
 
-export { Icons };
+export { icons };
