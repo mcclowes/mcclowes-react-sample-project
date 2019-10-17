@@ -6,6 +6,7 @@ This project includes:
 - Reasonable project structure
 - Examples of dumb components (`Dumb`) and smart, controlled components (`Smart`)
 - UIKit with useful simple components
+- Simple CircleCI configuration
 
 ## Setting up the project
 
