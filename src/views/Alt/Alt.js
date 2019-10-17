@@ -10,7 +10,9 @@ const Alt = props => {
 
       <PageWrapper>
         <Page>
-          <Text>Made by @mcclowes</Text>
+          <Text>
+            Made by <a href="https://github.com/mcclowes">@mcclowes</a>
+          </Text>
         </Page>
       </PageWrapper>
     </>

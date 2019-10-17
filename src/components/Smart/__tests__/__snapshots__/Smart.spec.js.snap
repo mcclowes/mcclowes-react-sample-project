@@ -2,12 +2,12 @@
 
 exports[`Smart renders default component 1`] = `
 <styled.div>
-  <styled.p>
-    Not active
-  </styled.p>
   <Button
     doClick={[Function]}
     text="Click me"
   />
+  <styled.p>
+    Not active
+  </styled.p>
 </styled.div>
 `;

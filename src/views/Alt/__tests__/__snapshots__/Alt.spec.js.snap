@@ -6,7 +6,12 @@ exports[`renders component 1`] = `
   <styled.div>
     <styled.div>
       <Text>
-        Made by @mcclowes
+        Made by 
+        <a
+          href="https://github.com/mcclowes"
+        >
+          @mcclowes
+        </a>
       </Text>
     </styled.div>
   </styled.div>

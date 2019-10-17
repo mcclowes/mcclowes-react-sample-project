@@ -21,6 +21,7 @@ export const Page = styled("div")`
   display: flex;
   flex-direction: column;
   padding: 1em 2em;
+  text-align: center;
 
   -webkit-box-shadow: 0px 4px 28px 6px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0px 4px 28px 6px rgba(0, 0, 0, 0.3);

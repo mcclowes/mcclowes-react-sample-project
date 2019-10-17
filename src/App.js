@@ -1,8 +1,7 @@
-import "./App.css";
 import GlobalStyle from "./GlobalStyle";
 import Helmet from "react-helmet";
 import React from "react";
-import Routes from "./Routes";
+import Routes from "./routing/Routes";
 import theme from "./theme";
 import { ThemeProvider } from "styled-components";
 

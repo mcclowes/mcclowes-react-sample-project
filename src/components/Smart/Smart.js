@@ -7,7 +7,7 @@ const Smart = props => {
 
   return (
     <SmartWrapper>
-      <Text.Meta>{active ? "Active" : "Not active"}</Text.Meta>
+      {children}
 
       <Button
         doClick={() => {
@@ -16,7 +16,7 @@ const Smart = props => {
         text="Click me"
       />
 
-      {children}
+      <Text.Meta>{active ? "Active" : "Not active"}</Text.Meta>
     </SmartWrapper>
   );
 };

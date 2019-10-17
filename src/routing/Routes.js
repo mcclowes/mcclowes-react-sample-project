@@ -1,5 +1,5 @@
-import Alt from "./views/Alt";
-import Main from "./views/Main";
+import Alt from "../views/Alt";
+import Main from "../views/Main";
 import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 

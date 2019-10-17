@@ -2,6 +2,8 @@
 
 exports[`Placeholder renders default component 1`] = `
 <Fragment>
-  <styled.div />
+  <styled.div
+    key="0"
+  />
 </Fragment>
 `;

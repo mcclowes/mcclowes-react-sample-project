@@ -7,8 +7,8 @@ const Placeholder = props => {
     <>
       {Array(lines)
         .fill(0)
-        .map(x => (
-          <PlaceholderWrapper />
+        .map((_, i) => (
+          <PlaceholderWrapper key={i} />
         ))}
     </>
   );

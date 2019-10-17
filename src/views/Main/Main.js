@@ -17,7 +17,9 @@ const Main = props => {
           </Smart>
 
           <Dumb>
-            <Text>Make changes as you wish</Text>
+            <Text>
+              This is an example project. Make changes as you see fit.
+            </Text>
           </Dumb>
         </Page>
       </PageWrapper>
