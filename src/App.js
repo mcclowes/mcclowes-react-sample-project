@@ -30,3 +30,6 @@ function App() {
 }
 
 export default App;
+// todo: routing
+// todo: route switch component
+// todo: theme provider?
