@@ -4,8 +4,8 @@ const LoaderWrapper = styled.div`
   -webkit-animation: spin 2s linear infinite; /* Safari */
   animation: spin 2s linear infinite;
   border-radius: 50%;
-  border: 2px solid #f3f3f3;
-  border-top: 2px solid #3498db;
+  border: 2px solid ${props => props.theme.colors.lightgray};
+  border-top: 2px solid ${props => props.theme.colors.primary};
   height: ${props => (props.height ? props.height : "16px")};
   width: ${props => (props.width ? props.width : "16px")};
 

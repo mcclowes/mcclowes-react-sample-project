@@ -1,14 +1,14 @@
 import styled from "styled-components";
 
 export const ButtonWrapper = styled.button`
-  background: red;
+  background: ${props => props.theme.colors.primary};
   border-radius: 3px;
   border: none;
-  color: white;
+  color: ${props => props.theme.colors.white};
   cursor: pointer;
   font-size: 14px;
   padding: 0.5em 1em;
-  border: 2px solid red;
+  border: 2px solid ${props => props.theme.colors.primary};
 
   &:hover {
     opacity: 0.75;
@@ -20,7 +20,7 @@ export const ButtonWrapper = styled.button`
 
   &:focus {
     outline: none;
-    border: 2px solid teal;
+    border: 2px solid ${props => props.theme.colors.alt};
   }
 
   ${props => (props.fill ? "width: 100%;" : "")};

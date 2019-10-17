@@ -3,11 +3,11 @@ import { ButtonWrapper } from "./csx";
 import Padded from "../Padded";
 
 const Button = props => {
-  const { children, text, to = "/" } = props;
-
+  const { children, text, to = "/", theme } = props;
+  console.log(theme);
   return (
     <Padded>
-      <ButtonWrapper to={to}>
+      <ButtonWrapper theme={theme} to={to}>
         {text}
         {children}
       </ButtonWrapper>

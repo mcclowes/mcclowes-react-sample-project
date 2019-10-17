@@ -1,18 +1,10 @@
 import "./App.css";
+import GlobalStyle from "./GlobalStyle";
 import Helmet from "react-helmet";
 import Main from "./views/Main";
 import React from "react";
-import { createGlobalStyle } from "styled-components";
-import * as UIKIT from "./components/UIKit";
-
-const GlobalStyle = createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap&subset=latin,latin-ext');
-
-  * {
-    box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
-  }
-`;
+import theme from "./theme";
+import { ThemeProvider } from "styled-components";
 
 function App() {
   return (
@@ -25,13 +17,9 @@ function App() {
         <title>Mcclowes React Sample Project</title>
       </Helmet>
 
-      <Main />
-
-      <UIKIT.Button>dhuasihdas</UIKIT.Button>
-
-      <UIKIT.Padded>dhuasihdas</UIKIT.Padded>
-
-      <UIKIT.Loader>dhuasihdas</UIKIT.Loader>
+      <ThemeProvider theme={theme}>
+        <Main />
+      </ThemeProvider>
     </div>
   );
 }
@@ -39,4 +27,3 @@ function App() {
 export default App;
 // todo: routing
 // todo: route switch component
-// todo: theme provider?

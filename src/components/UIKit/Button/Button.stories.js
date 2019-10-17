@@ -3,10 +3,10 @@ import Button from "./Button";
 
 export default { title: "Button" };
 
-export const simple = () => {
+export const empty = () => {
   return <Button />;
 };
 
-export const withChildren = () => {
+export const withText = () => {
   return <Button>Hello World</Button>;
 };
