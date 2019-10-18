@@ -1,6 +1,6 @@
 import React from "react";
-import { SmartWrapper } from "./csx";
-import { Button, Text } from "../UIKit";
+import { SmartWrapper, SmartContent } from "./csx";
+import { Button, Text, Padded } from "../UIKit";
 
 const Smart = props => {
   const { children, active, setActive } = props;
@@ -9,14 +9,18 @@ const Smart = props => {
     <SmartWrapper>
       {children}
 
-      <Button
-        doClick={() => {
-          setActive(!active);
-        }}
-        text="Click me"
-      />
+      <SmartContent>
+        <Button
+          doClick={() => {
+            setActive(!active);
+          }}
+          text="Click me"
+        />
 
-      <Text.Meta>{active ? "Active" : "Not active"}</Text.Meta>
+        <Padded space="p3">
+          <Text.Meta>{active ? "Active" : "Not active"}</Text.Meta>
+        </Padded>
+      </SmartContent>
     </SmartWrapper>
   );
 };

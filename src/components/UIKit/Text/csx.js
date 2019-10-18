@@ -12,6 +12,7 @@ export const Paragraph = styled.p`
 `;
 
 export const Meta = styled.p`
+  margin: 0;
   font-size: 0.8em;
   color: ${props => props.theme.colors.gray};
   font-family: Helventica, Arial, sans-serif;
