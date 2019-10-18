@@ -1,0 +1,823 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Dropdown open 1`] = `
+<DropdownContainer
+  placeholder="Default Dropdown"
+>
+  <Dropdown
+    open={true}
+    placeholder="Default Dropdown"
+    setOpen={[Function]}
+    setValue={[Function]}
+  >
+    <styled.div
+      onClick={[Function]}
+    >
+      <StyledComponent
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-bxivhb",
+              "isStatic": false,
+              "lastClassName": "cZYlFj",
+              "rules": Array [
+                "
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  cursor: pointer;
+",
+              ],
+            },
+            "displayName": "styled.div",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "sc-bxivhb",
+            "target": "div",
+            "toString": [Function],
+            "usesTheme": false,
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
+        }
+        forwardedRef={null}
+        onClick={[Function]}
+      >
+        <div
+          className="sc-bxivhb cZYlFj"
+          onClick={[Function]}
+        >
+          <styled.div>
+            <StyledComponent
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-bdVaJa",
+                    "isStatic": false,
+                    "lastClassName": "kFYmqX",
+                    "rules": Array [
+                      "
+  padding: 0.25em 0.5em;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+
+  ",
+                      [Function],
+                      ";
+
+  svg {
+    fill: #aaa;
+  }
+",
+                    ],
+                  },
+                  "displayName": "styled.div",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-bdVaJa",
+                  "target": "div",
+                  "toString": [Function],
+                  "usesTheme": false,
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+            >
+              <div
+                className="sc-bdVaJa kFYmqX"
+              >
+                Default Dropdown
+                <Icon
+                  icon="TICK"
+                >
+                  <styled.svg
+                    focusable="false"
+                    theme={
+                      Object {
+                        "colors": Object {
+                          "black": "#333",
+                        },
+                      }
+                    }
+                    viewBox="0 0 32 32"
+                  >
+                    <StyledComponent
+                      focusable="false"
+                      forwardedComponent={
+                        Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "_foldedDefaultProps": Object {
+                            "theme": Object {
+                              "colors": Object {
+                                "black": "#333",
+                              },
+                            },
+                          },
+                          "attrs": Array [],
+                          "componentStyle": ComponentStyle {
+                            "componentId": "sc-ifAKCX",
+                            "isStatic": false,
+                            "lastClassName": "lgTGPa",
+                            "rules": Array [
+                              "
+  fill: ",
+                              [Function],
+                              ";
+  width: ",
+                              [Function],
+                              ";
+  height: ",
+                              [Function],
+                              ";
+",
+                            ],
+                          },
+                          "displayName": "styled.svg",
+                          "foldedComponentIds": Array [],
+                          "render": [Function],
+                          "styledComponentId": "sc-ifAKCX",
+                          "target": "svg",
+                          "toString": [Function],
+                          "usesTheme": true,
+                          "warnTooManyClasses": [Function],
+                          "withComponent": [Function],
+                        }
+                      }
+                      forwardedRef={null}
+                      theme={
+                        Object {
+                          "colors": Object {
+                            "black": "#333",
+                          },
+                        }
+                      }
+                      viewBox="0 0 32 32"
+                    >
+                      <svg
+                        className="sc-ifAKCX lgTGPa"
+                        focusable="false"
+                        viewBox="0 0 32 32"
+                      >
+                        <path
+                          d="M16.35,21.34L16.35,21.34l-2.83,2.83l-2.83-2.83l-6.36-6.36l2.83-2.83l6.36,6.36L24.84,7.2l2.83,2.83L16.35,21.34z"
+                        />
+                      </svg>
+                    </StyledComponent>
+                  </styled.svg>
+                </Icon>
+              </div>
+            </StyledComponent>
+          </styled.div>
+        </div>
+      </StyledComponent>
+    </styled.div>
+  </Dropdown>
+</DropdownContainer>
+`;
+
+exports[`Dropdown renders component 1`] = `
+<DropdownContainer
+  placeholder="Default Dropdown"
+>
+  <Dropdown
+    open={false}
+    placeholder="Default Dropdown"
+    setOpen={[Function]}
+    setValue={[Function]}
+  >
+    <styled.div
+      onClick={[Function]}
+    >
+      <StyledComponent
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-bxivhb",
+              "isStatic": false,
+              "lastClassName": "cZYlFj",
+              "rules": Array [
+                "
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  cursor: pointer;
+",
+              ],
+            },
+            "displayName": "styled.div",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "sc-bxivhb",
+            "target": "div",
+            "toString": [Function],
+            "usesTheme": false,
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
+        }
+        forwardedRef={null}
+        onClick={[Function]}
+      >
+        <div
+          className="sc-bxivhb cZYlFj"
+          onClick={[Function]}
+        >
+          <styled.div>
+            <StyledComponent
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-bdVaJa",
+                    "isStatic": false,
+                    "lastClassName": "kFYmqX",
+                    "rules": Array [
+                      "
+  padding: 0.25em 0.5em;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+
+  ",
+                      [Function],
+                      ";
+
+  svg {
+    fill: #aaa;
+  }
+",
+                    ],
+                  },
+                  "displayName": "styled.div",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-bdVaJa",
+                  "target": "div",
+                  "toString": [Function],
+                  "usesTheme": false,
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+            >
+              <div
+                className="sc-bdVaJa kFYmqX"
+              >
+                Default Dropdown
+                <Icon
+                  icon="TICK"
+                >
+                  <styled.svg
+                    focusable="false"
+                    theme={
+                      Object {
+                        "colors": Object {
+                          "black": "#333",
+                        },
+                      }
+                    }
+                    viewBox="0 0 32 32"
+                  >
+                    <StyledComponent
+                      focusable="false"
+                      forwardedComponent={
+                        Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "_foldedDefaultProps": Object {
+                            "theme": Object {
+                              "colors": Object {
+                                "black": "#333",
+                              },
+                            },
+                          },
+                          "attrs": Array [],
+                          "componentStyle": ComponentStyle {
+                            "componentId": "sc-ifAKCX",
+                            "isStatic": false,
+                            "lastClassName": "lgTGPa",
+                            "rules": Array [
+                              "
+  fill: ",
+                              [Function],
+                              ";
+  width: ",
+                              [Function],
+                              ";
+  height: ",
+                              [Function],
+                              ";
+",
+                            ],
+                          },
+                          "displayName": "styled.svg",
+                          "foldedComponentIds": Array [],
+                          "render": [Function],
+                          "styledComponentId": "sc-ifAKCX",
+                          "target": "svg",
+                          "toString": [Function],
+                          "usesTheme": true,
+                          "warnTooManyClasses": [Function],
+                          "withComponent": [Function],
+                        }
+                      }
+                      forwardedRef={null}
+                      theme={
+                        Object {
+                          "colors": Object {
+                            "black": "#333",
+                          },
+                        }
+                      }
+                      viewBox="0 0 32 32"
+                    >
+                      <svg
+                        className="sc-ifAKCX lgTGPa"
+                        focusable="false"
+                        viewBox="0 0 32 32"
+                      >
+                        <path
+                          d="M16.35,21.34L16.35,21.34l-2.83,2.83l-2.83-2.83l-6.36-6.36l2.83-2.83l6.36,6.36L24.84,7.2l2.83,2.83L16.35,21.34z"
+                        />
+                      </svg>
+                    </StyledComponent>
+                  </styled.svg>
+                </Icon>
+              </div>
+            </StyledComponent>
+          </styled.div>
+        </div>
+      </StyledComponent>
+    </styled.div>
+  </Dropdown>
+</DropdownContainer>
+`;
+
+exports[`Dropdown renders component with options 1`] = `
+<DropdownContainer
+  options={
+    Array [
+      1,
+      2,
+      3,
+      4,
+      5,
+    ]
+  }
+  placeholder="Default Dropdown"
+>
+  <Dropdown
+    open={false}
+    options={
+      Array [
+        1,
+        2,
+        3,
+        4,
+        5,
+      ]
+    }
+    placeholder="Default Dropdown"
+    setOpen={[Function]}
+    setValue={[Function]}
+  >
+    <styled.div
+      onClick={[Function]}
+    >
+      <StyledComponent
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-bxivhb",
+              "isStatic": false,
+              "lastClassName": "cZYlFj",
+              "rules": Array [
+                "
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  cursor: pointer;
+",
+              ],
+            },
+            "displayName": "styled.div",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "sc-bxivhb",
+            "target": "div",
+            "toString": [Function],
+            "usesTheme": false,
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
+        }
+        forwardedRef={null}
+        onClick={[Function]}
+      >
+        <div
+          className="sc-bxivhb cZYlFj"
+          onClick={[Function]}
+        >
+          <styled.div>
+            <StyledComponent
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-bdVaJa",
+                    "isStatic": false,
+                    "lastClassName": "kFYmqX",
+                    "rules": Array [
+                      "
+  padding: 0.25em 0.5em;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+
+  ",
+                      [Function],
+                      ";
+
+  svg {
+    fill: #aaa;
+  }
+",
+                    ],
+                  },
+                  "displayName": "styled.div",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-bdVaJa",
+                  "target": "div",
+                  "toString": [Function],
+                  "usesTheme": false,
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+            >
+              <div
+                className="sc-bdVaJa kFYmqX"
+              >
+                Default Dropdown
+                <Icon
+                  icon="TICK"
+                >
+                  <styled.svg
+                    focusable="false"
+                    theme={
+                      Object {
+                        "colors": Object {
+                          "black": "#333",
+                        },
+                      }
+                    }
+                    viewBox="0 0 32 32"
+                  >
+                    <StyledComponent
+                      focusable="false"
+                      forwardedComponent={
+                        Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "_foldedDefaultProps": Object {
+                            "theme": Object {
+                              "colors": Object {
+                                "black": "#333",
+                              },
+                            },
+                          },
+                          "attrs": Array [],
+                          "componentStyle": ComponentStyle {
+                            "componentId": "sc-ifAKCX",
+                            "isStatic": false,
+                            "lastClassName": "lgTGPa",
+                            "rules": Array [
+                              "
+  fill: ",
+                              [Function],
+                              ";
+  width: ",
+                              [Function],
+                              ";
+  height: ",
+                              [Function],
+                              ";
+",
+                            ],
+                          },
+                          "displayName": "styled.svg",
+                          "foldedComponentIds": Array [],
+                          "render": [Function],
+                          "styledComponentId": "sc-ifAKCX",
+                          "target": "svg",
+                          "toString": [Function],
+                          "usesTheme": true,
+                          "warnTooManyClasses": [Function],
+                          "withComponent": [Function],
+                        }
+                      }
+                      forwardedRef={null}
+                      theme={
+                        Object {
+                          "colors": Object {
+                            "black": "#333",
+                          },
+                        }
+                      }
+                      viewBox="0 0 32 32"
+                    >
+                      <svg
+                        className="sc-ifAKCX lgTGPa"
+                        focusable="false"
+                        viewBox="0 0 32 32"
+                      >
+                        <path
+                          d="M16.35,21.34L16.35,21.34l-2.83,2.83l-2.83-2.83l-6.36-6.36l2.83-2.83l6.36,6.36L24.84,7.2l2.83,2.83L16.35,21.34z"
+                        />
+                      </svg>
+                    </StyledComponent>
+                  </styled.svg>
+                </Icon>
+              </div>
+            </StyledComponent>
+          </styled.div>
+          <styled.div
+            open={false}
+          >
+            <StyledComponent
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-bwzfXH",
+                    "isStatic": false,
+                    "lastClassName": "kIdcZD",
+                    "rules": Array [
+                      "
+  ",
+                      [Function],
+                      ";
+",
+                    ],
+                  },
+                  "displayName": "styled.div",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-bwzfXH",
+                  "target": "div",
+                  "toString": [Function],
+                  "usesTheme": false,
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+              open={false}
+            >
+              <div
+                className="sc-bwzfXH kIdcZD"
+                open={false}
+              >
+                <styled.div
+                  key="0"
+                  onClick={[Function]}
+                  selected={false}
+                >
+                  <StyledComponent
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "sc-htpNat",
+                          "isStatic": false,
+                          "lastClassName": "jQWAJu",
+                          "rules": Array [
+                            "
+  padding: 0.25em 0.5em;
+",
+                          ],
+                        },
+                        "displayName": "styled.div",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "sc-htpNat",
+                        "target": "div",
+                        "toString": [Function],
+                        "usesTheme": false,
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                    onClick={[Function]}
+                    selected={false}
+                  >
+                    <div
+                      className="sc-htpNat jQWAJu"
+                      onClick={[Function]}
+                      selected={false}
+                    >
+                      1
+                    </div>
+                  </StyledComponent>
+                </styled.div>
+                <styled.div
+                  key="1"
+                  onClick={[Function]}
+                  selected={false}
+                >
+                  <StyledComponent
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "sc-htpNat",
+                          "isStatic": false,
+                          "lastClassName": "jQWAJu",
+                          "rules": Array [
+                            "
+  padding: 0.25em 0.5em;
+",
+                          ],
+                        },
+                        "displayName": "styled.div",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "sc-htpNat",
+                        "target": "div",
+                        "toString": [Function],
+                        "usesTheme": false,
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                    onClick={[Function]}
+                    selected={false}
+                  >
+                    <div
+                      className="sc-htpNat jQWAJu"
+                      onClick={[Function]}
+                      selected={false}
+                    >
+                      2
+                    </div>
+                  </StyledComponent>
+                </styled.div>
+                <styled.div
+                  key="2"
+                  onClick={[Function]}
+                  selected={false}
+                >
+                  <StyledComponent
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "sc-htpNat",
+                          "isStatic": false,
+                          "lastClassName": "jQWAJu",
+                          "rules": Array [
+                            "
+  padding: 0.25em 0.5em;
+",
+                          ],
+                        },
+                        "displayName": "styled.div",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "sc-htpNat",
+                        "target": "div",
+                        "toString": [Function],
+                        "usesTheme": false,
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                    onClick={[Function]}
+                    selected={false}
+                  >
+                    <div
+                      className="sc-htpNat jQWAJu"
+                      onClick={[Function]}
+                      selected={false}
+                    >
+                      3
+                    </div>
+                  </StyledComponent>
+                </styled.div>
+                <styled.div
+                  key="3"
+                  onClick={[Function]}
+                  selected={false}
+                >
+                  <StyledComponent
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "sc-htpNat",
+                          "isStatic": false,
+                          "lastClassName": "jQWAJu",
+                          "rules": Array [
+                            "
+  padding: 0.25em 0.5em;
+",
+                          ],
+                        },
+                        "displayName": "styled.div",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "sc-htpNat",
+                        "target": "div",
+                        "toString": [Function],
+                        "usesTheme": false,
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                    onClick={[Function]}
+                    selected={false}
+                  >
+                    <div
+                      className="sc-htpNat jQWAJu"
+                      onClick={[Function]}
+                      selected={false}
+                    >
+                      4
+                    </div>
+                  </StyledComponent>
+                </styled.div>
+                <styled.div
+                  key="4"
+                  onClick={[Function]}
+                  selected={false}
+                >
+                  <StyledComponent
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "sc-htpNat",
+                          "isStatic": false,
+                          "lastClassName": "jQWAJu",
+                          "rules": Array [
+                            "
+  padding: 0.25em 0.5em;
+",
+                          ],
+                        },
+                        "displayName": "styled.div",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "sc-htpNat",
+                        "target": "div",
+                        "toString": [Function],
+                        "usesTheme": false,
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                    onClick={[Function]}
+                    selected={false}
+                  >
+                    <div
+                      className="sc-htpNat jQWAJu"
+                      onClick={[Function]}
+                      selected={false}
+                    >
+                      5
+                    </div>
+                  </StyledComponent>
+                </styled.div>
+              </div>
+            </StyledComponent>
+          </styled.div>
+        </div>
+      </StyledComponent>
+    </styled.div>
+  </Dropdown>
+</DropdownContainer>
+`;

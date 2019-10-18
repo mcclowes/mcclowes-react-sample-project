@@ -3,6 +3,13 @@
 exports[`Icon renders as expected 1`] = `
 <styled.svg
   focusable="false"
+  theme={
+    Object {
+      "colors": Object {
+        "black": "#333",
+      },
+    }
+  }
   viewBox="0 0 32 32"
 >
   <path
