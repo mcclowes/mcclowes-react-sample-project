@@ -12,7 +12,6 @@ export const ButtonWrapper = styled.button`
   display: flex;
   justify-items: center;
   align-items: center;
-  margin: auto;
 
   &:hover {
     opacity: 0.75;
