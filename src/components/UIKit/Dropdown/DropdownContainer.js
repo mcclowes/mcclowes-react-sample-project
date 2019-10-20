@@ -5,12 +5,14 @@ const DropdownContainer = props => {
   const [open, setOpen] = useState(false);
   const [value, setValue] = useState(undefined);
 
+  const { callback } = props;
+
   return (
     <Dropdown
       value={value}
       setValue={value => {
         setValue(value);
-        props.callback(value);
+        callback(value);
       }}
       open={open}
       setOpen={setOpen}
