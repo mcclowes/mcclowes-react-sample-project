@@ -6,10 +6,26 @@ export const Header = styled.h1`
   font-family: Helventica, Arial, sans-serif;
 `;
 
+Header.defaultProps = {
+  theme: {
+    colors: {
+      black: "#333333"
+    }
+  }
+};
+
 export const Paragraph = styled.p`
   color: ${props => props.theme.colors.black};
   font-family: Helventica, Arial, sans-serif;
 `;
+
+Paragraph.defaultProps = {
+  theme: {
+    colors: {
+      black: "#333333"
+    }
+  }
+};
 
 export const Meta = styled.p`
   margin: 0;
@@ -17,3 +33,11 @@ export const Meta = styled.p`
   color: ${props => props.theme.colors.gray};
   font-family: Helventica, Arial, sans-serif;
 `;
+
+Meta.defaultProps = {
+  theme: {
+    colors: {
+      gray: "#aaaaaa"
+    }
+  }
+};

@@ -10,7 +10,15 @@ exports[`Smart renders default component 1`] = `
     <Padded
       space="p3"
     >
-      <csx__Meta>
+      <csx__Meta
+        theme={
+          Object {
+            "colors": Object {
+              "gray": "#aaaaaa",
+            },
+          }
+        }
+      >
         Not active
       </csx__Meta>
     </Padded>

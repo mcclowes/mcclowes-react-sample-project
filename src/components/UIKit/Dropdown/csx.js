@@ -7,33 +7,67 @@ export const DropdownPlaceholder = styled.div`
   flex-direction: row;
   align-items: center;
 
-  ${props => (props.value === undefined ? "color: #aaa;" : "")};
-
-  svg {
-    fill: #aaa;
-    transform: ${props => (props.open ? "rotate(180deg);" : "")};
-  }
+  ${props =>
+    props.value === undefined ? `color: ${props.theme.colors.gray};` : ""};
 `;
+
+DropdownPlaceholder.defaultProps = {
+  theme: {
+    colors: {
+      gray: "#aaaaaa"
+    }
+  }
+};
 
 export const DropdownOptions = styled.div`
-  ${props => (props.open ? "border-top: 1px solid #aaa;" : "display:none;")};
+  ${props =>
+    props.open
+      ? `border-top: 1px solid ${props.theme.colors.gray};`
+      : "display:none;"};
 `;
 
-export const DropdownOption = styled.div`
-  padding: 0.25em 0.5em;
-
-  &:hover {
-    background-color: #eee;
+DropdownOptions.defaultProps = {
+  theme: {
+    colors: {
+      gray: "#aaaaaa"
+    }
   }
+};
 
-  &:active {
-    background-color: #ddd;
-  }
-`;
+export const DropdownOption = styled.div``;
 
 export const DropdownWrapper = styled.div`
-  border: 1px solid #aaa;
+  border: 1px solid ${props => props.theme.colors.gray};
   border-radius: 3px;
   cursor: pointer;
-  background: white;
+  background: ${props => props.theme.colors.white};
+
+  ${DropdownPlaceholder} {
+    svg {
+      fill: ${props => props.theme.colors.gray};
+      transform: ${props => (props.open ? "rotate(180deg);" : "")};
+    }
+  }
+
+  ${DropdownOption} {
+    padding: 0.25em 0.5em;
+
+    &:hover {
+      background-color: ${props => props.theme.colors.lightgray};
+    }
+
+    &:active {
+      background-color: ${props => props.theme.colors.gray};
+    }
+  }
 `;
+
+DropdownWrapper.defaultProps = {
+  theme: {
+    colors: {
+      white: "#ffffff",
+      gray: "#aaaaaa",
+      lightgray: "#eeeeee"
+    }
+  }
+};

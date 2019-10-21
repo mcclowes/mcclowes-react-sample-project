@@ -5,6 +5,13 @@ exports[`Text Header renders default component 1`] = `
   forwardedComponent={
     Object {
       "$$typeof": Symbol(react.forward_ref),
+      "_foldedDefaultProps": Object {
+        "theme": Object {
+          "colors": Object {
+            "black": "#333333",
+          },
+        },
+      },
       "attrs": Array [],
       "componentStyle": ComponentStyle {
         "componentId": "csx__Paragraph-sc-5c5e0o-1",
@@ -27,6 +34,13 @@ exports[`Text Header renders default component 1`] = `
     }
   }
   forwardedRef={null}
+  theme={
+    Object {
+      "colors": Object {
+        "black": "#333333",
+      },
+    }
+  }
 >
   Some text goes here
 </StyledComponent>
@@ -37,6 +51,13 @@ exports[`Text Text renders default component 1`] = `
   forwardedComponent={
     Object {
       "$$typeof": Symbol(react.forward_ref),
+      "_foldedDefaultProps": Object {
+        "theme": Object {
+          "colors": Object {
+            "black": "#333333",
+          },
+        },
+      },
       "attrs": Array [],
       "componentStyle": ComponentStyle {
         "componentId": "csx__Paragraph-sc-5c5e0o-1",
@@ -59,6 +80,13 @@ exports[`Text Text renders default component 1`] = `
     }
   }
   forwardedRef={null}
+  theme={
+    Object {
+      "colors": Object {
+        "black": "#333333",
+      },
+    }
+  }
 >
   Some text goes here
 </StyledComponent>
@@ -69,6 +97,13 @@ exports[`Text Text renders default component 2`] = `
   forwardedComponent={
     Object {
       "$$typeof": Symbol(react.forward_ref),
+      "_foldedDefaultProps": Object {
+        "theme": Object {
+          "colors": Object {
+            "black": "#333333",
+          },
+        },
+      },
       "attrs": Array [],
       "componentStyle": ComponentStyle {
         "componentId": "csx__Paragraph-sc-5c5e0o-1",
@@ -91,6 +126,13 @@ exports[`Text Text renders default component 2`] = `
     }
   }
   forwardedRef={null}
+  theme={
+    Object {
+      "colors": Object {
+        "black": "#333333",
+      },
+    }
+  }
 >
   Some text goes here
 </StyledComponent>
@@ -101,6 +143,13 @@ exports[`Text renders default component 1`] = `
   forwardedComponent={
     Object {
       "$$typeof": Symbol(react.forward_ref),
+      "_foldedDefaultProps": Object {
+        "theme": Object {
+          "colors": Object {
+            "black": "#333333",
+          },
+        },
+      },
       "attrs": Array [],
       "componentStyle": ComponentStyle {
         "componentId": "csx__Paragraph-sc-5c5e0o-1",
@@ -123,6 +172,13 @@ exports[`Text renders default component 1`] = `
     }
   }
   forwardedRef={null}
+  theme={
+    Object {
+      "colors": Object {
+        "black": "#333333",
+      },
+    }
+  }
 >
   Some text goes here
 </StyledComponent>

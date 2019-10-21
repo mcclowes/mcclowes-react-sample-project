@@ -2,15 +2,16 @@
 
 exports[`Dropdown renders component 1`] = `
 <Dropdown
+  handleClick={[Function]}
   open={false}
   placeholder="Default Dropdown"
   setOpen={[Function]}
-  setValue={[Function]}
 />
 `;
 
 exports[`Dropdown renders component with options 1`] = `
 <Dropdown
+  handleClick={[Function]}
   open={false}
   options={
     Array [
@@ -23,6 +24,5 @@ exports[`Dropdown renders component with options 1`] = `
   }
   placeholder="Default Dropdown"
   setOpen={[Function]}
-  setValue={[Function]}
 />
 `;

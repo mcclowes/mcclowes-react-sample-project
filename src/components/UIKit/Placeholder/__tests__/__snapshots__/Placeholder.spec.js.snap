@@ -4,6 +4,13 @@ exports[`Placeholder renders default component 1`] = `
 <Fragment>
   <csx__PlaceholderWrapper
     key="0"
+    theme={
+      Object {
+        "colors": Object {
+          "black": "#333333",
+        },
+      }
+    }
   />
 </Fragment>
 `;

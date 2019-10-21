@@ -2,6 +2,14 @@
 
 exports[`Button renders component 1`] = `
 <csx__ButtonWrapper
+  theme={
+    Object {
+      "colors": Object {
+        "alt": "#888",
+        "primary": "#aaa",
+      },
+    }
+  }
   to="/"
 >
   Default Button

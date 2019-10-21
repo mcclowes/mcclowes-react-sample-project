@@ -30,3 +30,12 @@ const LoaderWrapper = styled.div`
 `;
 
 export { LoaderWrapper };
+
+LoaderWrapper.defaultProps = {
+  theme: {
+    colors: {
+      primary: "#DD3437",
+      lightgray: "#eeeeee"
+    }
+  }
+};

@@ -8,7 +8,7 @@ import {
 import Icon from "../Icon";
 
 const Dropdown = props => {
-  const { placeholder, options, open, setOpen, value, setValue } = props;
+  const { placeholder, options, open, setOpen, value, handleClick } = props;
 
   return (
     <DropdownWrapper onClick={() => setOpen(!open)}>
@@ -24,7 +24,7 @@ const Dropdown = props => {
             return (
               <DropdownOption
                 key={i}
-                onClick={() => setValue(option)}
+                onClick={() => handleClick(option)}
                 selected={value === option}
               >
                 {option}

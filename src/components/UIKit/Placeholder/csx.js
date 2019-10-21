@@ -12,3 +12,11 @@ export const PlaceholderWrapper = styled.div`
     max-width: 70%;
   }
 `;
+
+PlaceholderWrapper.defaultProps = {
+  theme: {
+    colors: {
+      black: "#333333"
+    }
+  }
+};

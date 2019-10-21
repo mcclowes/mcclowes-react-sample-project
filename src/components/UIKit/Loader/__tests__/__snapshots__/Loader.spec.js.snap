@@ -1,3 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Loader renders the component as expected 1`] = `<csx__LoaderWrapper />`;
+exports[`Loader renders the component as expected 1`] = `
+<csx__LoaderWrapper
+  theme={
+    Object {
+      "colors": Object {
+        "lightgray": "#eeeeee",
+        "primary": "#DD3437",
+      },
+    }
+  }
+/>
+`;

@@ -35,3 +35,12 @@ export const ButtonWrapper = styled.button`
     fill: ${props => props.theme.colors.white};
   }
 `;
+
+ButtonWrapper.defaultProps = {
+  theme: {
+    colors: {
+      primary: "#aaa",
+      alt: "#888"
+    }
+  }
+};

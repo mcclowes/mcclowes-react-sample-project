@@ -7,13 +7,17 @@ const DropdownContainer = props => {
 
   const { callback } = props;
 
+  const handleClick = value => {
+    setValue(value);
+    if (callback) {
+      callback(value);
+    }
+  };
+
   return (
     <Dropdown
       value={value}
-      setValue={value => {
-        setValue(value);
-        callback(value);
-      }}
+      handleClick={handleClick}
       open={open}
       setOpen={setOpen}
       {...props}
