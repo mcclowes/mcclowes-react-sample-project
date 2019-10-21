@@ -3,8 +3,8 @@
 exports[`renders component 1`] = `
 <Fragment>
   <Nav />
-  <styled.div>
-    <styled.div>
+  <csx__PageWrapper>
+    <csx__Page>
       <Text>
         Made by 
         <a
@@ -13,7 +13,7 @@ exports[`renders component 1`] = `
           @mcclowes
         </a>
       </Text>
-    </styled.div>
-  </styled.div>
+    </csx__Page>
+  </csx__PageWrapper>
 </Fragment>
 `;

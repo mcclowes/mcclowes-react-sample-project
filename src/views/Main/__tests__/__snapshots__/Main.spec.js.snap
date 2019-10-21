@@ -3,8 +3,8 @@
 exports[`renders component 1`] = `
 <Fragment>
   <Nav />
-  <styled.div>
-    <styled.div>
+  <csx__PageWrapper>
+    <csx__Page>
       <SmartContainer>
         <Text>
           Hello World!
@@ -15,7 +15,7 @@ exports[`renders component 1`] = `
           This is an example project. Make changes as you see fit.
         </Text>
       </Dumb>
-    </styled.div>
-  </styled.div>
+    </csx__Page>
+  </csx__PageWrapper>
 </Fragment>
 `;

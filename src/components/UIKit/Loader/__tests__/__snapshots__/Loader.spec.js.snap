@@ -1,3 +1,3 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Loader renders the component as expected 1`] = `<styled.div />`;
+exports[`Loader renders the component as expected 1`] = `<csx__LoaderWrapper />`;

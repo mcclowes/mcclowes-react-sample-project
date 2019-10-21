@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components/macro";
 
 export const PaddedWrapper = styled.div`
   ${props => (props.space === "p1" ? "padding: 0.125em;" : "")};

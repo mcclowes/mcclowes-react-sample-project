@@ -1,8 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Smart renders default component 1`] = `
-<styled.div>
-  <styled.div>
+<csx__SmartWrapper>
+  <csx__SmartContent>
     <Button
       doClick={[Function]}
       text="Click me"
@@ -10,10 +10,10 @@ exports[`Smart renders default component 1`] = `
     <Padded
       space="p3"
     >
-      <styled.p>
+      <csx__Meta>
         Not active
-      </styled.p>
+      </csx__Meta>
     </Padded>
-  </styled.div>
-</styled.div>
+  </csx__SmartContent>
+</csx__SmartWrapper>
 `;

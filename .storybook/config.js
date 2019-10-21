@@ -1,7 +1,7 @@
 import { configure, addDecorator } from "@storybook/react";
 import theme from "../src/theme";
 import GlobalStyle from "../src/GlobalStyle";
-import { ThemeProvider } from "styled-components";
+import { ThemeProvider } from "styled-components/macro";
 import React from "react";
 
 addDecorator(story => {

@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components/macro";
 
 export const DropdownPlaceholder = styled.div`
   padding: 0.25em 0.5em;

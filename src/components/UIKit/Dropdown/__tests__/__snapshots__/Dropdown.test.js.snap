@@ -10,7 +10,7 @@ exports[`Dropdown open 1`] = `
     setOpen={[Function]}
     setValue={[Function]}
   >
-    <styled.div
+    <csx__DropdownWrapper
       onClick={[Function]}
     >
       <StyledComponent
@@ -19,21 +19,17 @@ exports[`Dropdown open 1`] = `
             "$$typeof": Symbol(react.forward_ref),
             "attrs": Array [],
             "componentStyle": ComponentStyle {
-              "componentId": "sc-bxivhb",
+              "componentId": "csx__DropdownWrapper-q2vx2b-3",
               "isStatic": false,
-              "lastClassName": "cZYlFj",
+              "lastClassName": "kqleMk",
               "rules": Array [
-                "
-  border: 1px solid #aaa;
-  border-radius: 3px;
-  cursor: pointer;
-",
+                "border:1px solid #aaa;border-radius:3px;cursor:pointer;",
               ],
             },
-            "displayName": "styled.div",
+            "displayName": "csx__DropdownWrapper",
             "foldedComponentIds": Array [],
             "render": [Function],
-            "styledComponentId": "sc-bxivhb",
+            "styledComponentId": "csx__DropdownWrapper-q2vx2b-3",
             "target": "div",
             "toString": [Function],
             "usesTheme": false,
@@ -45,41 +41,29 @@ exports[`Dropdown open 1`] = `
         onClick={[Function]}
       >
         <div
-          className="sc-bxivhb cZYlFj"
+          className="csx__DropdownWrapper-q2vx2b-3 kqleMk"
           onClick={[Function]}
         >
-          <styled.div>
+          <csx__DropdownPlaceholder>
             <StyledComponent
               forwardedComponent={
                 Object {
                   "$$typeof": Symbol(react.forward_ref),
                   "attrs": Array [],
                   "componentStyle": ComponentStyle {
-                    "componentId": "sc-bdVaJa",
+                    "componentId": "csx__DropdownPlaceholder-q2vx2b-0",
                     "isStatic": false,
-                    "lastClassName": "kFYmqX",
+                    "lastClassName": "kMfNMu",
                     "rules": Array [
-                      "
-  padding: 0.25em 0.5em;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  align-items: center;
-
-  ",
+                      "padding:0.25em 0.5em;display:flex;justify-content:space-between;flex-direction:row;align-items:center;",
                       [Function],
-                      ";
-
-  svg {
-    fill: #aaa;
-  }
-",
+                      ";svg{fill:#aaa;}",
                     ],
                   },
-                  "displayName": "styled.div",
+                  "displayName": "csx__DropdownPlaceholder",
                   "foldedComponentIds": Array [],
                   "render": [Function],
-                  "styledComponentId": "sc-bdVaJa",
+                  "styledComponentId": "csx__DropdownPlaceholder-q2vx2b-0",
                   "target": "div",
                   "toString": [Function],
                   "usesTheme": false,
@@ -90,13 +74,13 @@ exports[`Dropdown open 1`] = `
               forwardedRef={null}
             >
               <div
-                className="sc-bdVaJa kFYmqX"
+                className="csx__DropdownPlaceholder-q2vx2b-0 kMfNMu"
               >
                 Default Dropdown
                 <Icon
                   icon="TICK"
                 >
-                  <styled.svg
+                  <csx__IconWrapper
                     focusable="false"
                     theme={
                       Object {
@@ -121,27 +105,23 @@ exports[`Dropdown open 1`] = `
                           },
                           "attrs": Array [],
                           "componentStyle": ComponentStyle {
-                            "componentId": "sc-ifAKCX",
+                            "componentId": "csx__IconWrapper-sc-15pjeas-0",
                             "isStatic": false,
-                            "lastClassName": "lgTGPa",
+                            "lastClassName": "igSHhC",
                             "rules": Array [
-                              "
-  fill: ",
+                              "fill:",
                               [Function],
-                              ";
-  width: ",
+                              ";width:",
                               [Function],
-                              ";
-  height: ",
+                              ";height:",
                               [Function],
-                              ";
-",
+                              ";",
                             ],
                           },
-                          "displayName": "styled.svg",
+                          "displayName": "csx__IconWrapper",
                           "foldedComponentIds": Array [],
                           "render": [Function],
-                          "styledComponentId": "sc-ifAKCX",
+                          "styledComponentId": "csx__IconWrapper-sc-15pjeas-0",
                           "target": "svg",
                           "toString": [Function],
                           "usesTheme": true,
@@ -160,7 +140,7 @@ exports[`Dropdown open 1`] = `
                       viewBox="0 0 32 32"
                     >
                       <svg
-                        className="sc-ifAKCX lgTGPa"
+                        className="csx__IconWrapper-sc-15pjeas-0 igSHhC"
                         focusable="false"
                         viewBox="0 0 32 32"
                       >
@@ -169,14 +149,14 @@ exports[`Dropdown open 1`] = `
                         />
                       </svg>
                     </StyledComponent>
-                  </styled.svg>
+                  </csx__IconWrapper>
                 </Icon>
               </div>
             </StyledComponent>
-          </styled.div>
+          </csx__DropdownPlaceholder>
         </div>
       </StyledComponent>
-    </styled.div>
+    </csx__DropdownWrapper>
   </Dropdown>
 </DropdownContainer>
 `;
@@ -191,7 +171,7 @@ exports[`Dropdown renders component 1`] = `
     setOpen={[Function]}
     setValue={[Function]}
   >
-    <styled.div
+    <csx__DropdownWrapper
       onClick={[Function]}
     >
       <StyledComponent
@@ -200,21 +180,17 @@ exports[`Dropdown renders component 1`] = `
             "$$typeof": Symbol(react.forward_ref),
             "attrs": Array [],
             "componentStyle": ComponentStyle {
-              "componentId": "sc-bxivhb",
+              "componentId": "csx__DropdownWrapper-q2vx2b-3",
               "isStatic": false,
-              "lastClassName": "cZYlFj",
+              "lastClassName": "kqleMk",
               "rules": Array [
-                "
-  border: 1px solid #aaa;
-  border-radius: 3px;
-  cursor: pointer;
-",
+                "border:1px solid #aaa;border-radius:3px;cursor:pointer;",
               ],
             },
-            "displayName": "styled.div",
+            "displayName": "csx__DropdownWrapper",
             "foldedComponentIds": Array [],
             "render": [Function],
-            "styledComponentId": "sc-bxivhb",
+            "styledComponentId": "csx__DropdownWrapper-q2vx2b-3",
             "target": "div",
             "toString": [Function],
             "usesTheme": false,
@@ -226,41 +202,29 @@ exports[`Dropdown renders component 1`] = `
         onClick={[Function]}
       >
         <div
-          className="sc-bxivhb cZYlFj"
+          className="csx__DropdownWrapper-q2vx2b-3 kqleMk"
           onClick={[Function]}
         >
-          <styled.div>
+          <csx__DropdownPlaceholder>
             <StyledComponent
               forwardedComponent={
                 Object {
                   "$$typeof": Symbol(react.forward_ref),
                   "attrs": Array [],
                   "componentStyle": ComponentStyle {
-                    "componentId": "sc-bdVaJa",
+                    "componentId": "csx__DropdownPlaceholder-q2vx2b-0",
                     "isStatic": false,
-                    "lastClassName": "kFYmqX",
+                    "lastClassName": "kMfNMu",
                     "rules": Array [
-                      "
-  padding: 0.25em 0.5em;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  align-items: center;
-
-  ",
+                      "padding:0.25em 0.5em;display:flex;justify-content:space-between;flex-direction:row;align-items:center;",
                       [Function],
-                      ";
-
-  svg {
-    fill: #aaa;
-  }
-",
+                      ";svg{fill:#aaa;}",
                     ],
                   },
-                  "displayName": "styled.div",
+                  "displayName": "csx__DropdownPlaceholder",
                   "foldedComponentIds": Array [],
                   "render": [Function],
-                  "styledComponentId": "sc-bdVaJa",
+                  "styledComponentId": "csx__DropdownPlaceholder-q2vx2b-0",
                   "target": "div",
                   "toString": [Function],
                   "usesTheme": false,
@@ -271,13 +235,13 @@ exports[`Dropdown renders component 1`] = `
               forwardedRef={null}
             >
               <div
-                className="sc-bdVaJa kFYmqX"
+                className="csx__DropdownPlaceholder-q2vx2b-0 kMfNMu"
               >
                 Default Dropdown
                 <Icon
                   icon="TICK"
                 >
-                  <styled.svg
+                  <csx__IconWrapper
                     focusable="false"
                     theme={
                       Object {
@@ -302,27 +266,23 @@ exports[`Dropdown renders component 1`] = `
                           },
                           "attrs": Array [],
                           "componentStyle": ComponentStyle {
-                            "componentId": "sc-ifAKCX",
+                            "componentId": "csx__IconWrapper-sc-15pjeas-0",
                             "isStatic": false,
-                            "lastClassName": "lgTGPa",
+                            "lastClassName": "igSHhC",
                             "rules": Array [
-                              "
-  fill: ",
+                              "fill:",
                               [Function],
-                              ";
-  width: ",
+                              ";width:",
                               [Function],
-                              ";
-  height: ",
+                              ";height:",
                               [Function],
-                              ";
-",
+                              ";",
                             ],
                           },
-                          "displayName": "styled.svg",
+                          "displayName": "csx__IconWrapper",
                           "foldedComponentIds": Array [],
                           "render": [Function],
-                          "styledComponentId": "sc-ifAKCX",
+                          "styledComponentId": "csx__IconWrapper-sc-15pjeas-0",
                           "target": "svg",
                           "toString": [Function],
                           "usesTheme": true,
@@ -341,7 +301,7 @@ exports[`Dropdown renders component 1`] = `
                       viewBox="0 0 32 32"
                     >
                       <svg
-                        className="sc-ifAKCX lgTGPa"
+                        className="csx__IconWrapper-sc-15pjeas-0 igSHhC"
                         focusable="false"
                         viewBox="0 0 32 32"
                       >
@@ -350,14 +310,14 @@ exports[`Dropdown renders component 1`] = `
                         />
                       </svg>
                     </StyledComponent>
-                  </styled.svg>
+                  </csx__IconWrapper>
                 </Icon>
               </div>
             </StyledComponent>
-          </styled.div>
+          </csx__DropdownPlaceholder>
         </div>
       </StyledComponent>
-    </styled.div>
+    </csx__DropdownWrapper>
   </Dropdown>
 </DropdownContainer>
 `;
@@ -390,7 +350,7 @@ exports[`Dropdown renders component with options 1`] = `
     setOpen={[Function]}
     setValue={[Function]}
   >
-    <styled.div
+    <csx__DropdownWrapper
       onClick={[Function]}
     >
       <StyledComponent
@@ -399,21 +359,17 @@ exports[`Dropdown renders component with options 1`] = `
             "$$typeof": Symbol(react.forward_ref),
             "attrs": Array [],
             "componentStyle": ComponentStyle {
-              "componentId": "sc-bxivhb",
+              "componentId": "csx__DropdownWrapper-q2vx2b-3",
               "isStatic": false,
-              "lastClassName": "cZYlFj",
+              "lastClassName": "kqleMk",
               "rules": Array [
-                "
-  border: 1px solid #aaa;
-  border-radius: 3px;
-  cursor: pointer;
-",
+                "border:1px solid #aaa;border-radius:3px;cursor:pointer;",
               ],
             },
-            "displayName": "styled.div",
+            "displayName": "csx__DropdownWrapper",
             "foldedComponentIds": Array [],
             "render": [Function],
-            "styledComponentId": "sc-bxivhb",
+            "styledComponentId": "csx__DropdownWrapper-q2vx2b-3",
             "target": "div",
             "toString": [Function],
             "usesTheme": false,
@@ -425,41 +381,29 @@ exports[`Dropdown renders component with options 1`] = `
         onClick={[Function]}
       >
         <div
-          className="sc-bxivhb cZYlFj"
+          className="csx__DropdownWrapper-q2vx2b-3 kqleMk"
           onClick={[Function]}
         >
-          <styled.div>
+          <csx__DropdownPlaceholder>
             <StyledComponent
               forwardedComponent={
                 Object {
                   "$$typeof": Symbol(react.forward_ref),
                   "attrs": Array [],
                   "componentStyle": ComponentStyle {
-                    "componentId": "sc-bdVaJa",
+                    "componentId": "csx__DropdownPlaceholder-q2vx2b-0",
                     "isStatic": false,
-                    "lastClassName": "kFYmqX",
+                    "lastClassName": "kMfNMu",
                     "rules": Array [
-                      "
-  padding: 0.25em 0.5em;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  align-items: center;
-
-  ",
+                      "padding:0.25em 0.5em;display:flex;justify-content:space-between;flex-direction:row;align-items:center;",
                       [Function],
-                      ";
-
-  svg {
-    fill: #aaa;
-  }
-",
+                      ";svg{fill:#aaa;}",
                     ],
                   },
-                  "displayName": "styled.div",
+                  "displayName": "csx__DropdownPlaceholder",
                   "foldedComponentIds": Array [],
                   "render": [Function],
-                  "styledComponentId": "sc-bdVaJa",
+                  "styledComponentId": "csx__DropdownPlaceholder-q2vx2b-0",
                   "target": "div",
                   "toString": [Function],
                   "usesTheme": false,
@@ -470,13 +414,13 @@ exports[`Dropdown renders component with options 1`] = `
               forwardedRef={null}
             >
               <div
-                className="sc-bdVaJa kFYmqX"
+                className="csx__DropdownPlaceholder-q2vx2b-0 kMfNMu"
               >
                 Default Dropdown
                 <Icon
                   icon="TICK"
                 >
-                  <styled.svg
+                  <csx__IconWrapper
                     focusable="false"
                     theme={
                       Object {
@@ -501,27 +445,23 @@ exports[`Dropdown renders component with options 1`] = `
                           },
                           "attrs": Array [],
                           "componentStyle": ComponentStyle {
-                            "componentId": "sc-ifAKCX",
+                            "componentId": "csx__IconWrapper-sc-15pjeas-0",
                             "isStatic": false,
-                            "lastClassName": "lgTGPa",
+                            "lastClassName": "igSHhC",
                             "rules": Array [
-                              "
-  fill: ",
+                              "fill:",
                               [Function],
-                              ";
-  width: ",
+                              ";width:",
                               [Function],
-                              ";
-  height: ",
+                              ";height:",
                               [Function],
-                              ";
-",
+                              ";",
                             ],
                           },
-                          "displayName": "styled.svg",
+                          "displayName": "csx__IconWrapper",
                           "foldedComponentIds": Array [],
                           "render": [Function],
-                          "styledComponentId": "sc-ifAKCX",
+                          "styledComponentId": "csx__IconWrapper-sc-15pjeas-0",
                           "target": "svg",
                           "toString": [Function],
                           "usesTheme": true,
@@ -540,7 +480,7 @@ exports[`Dropdown renders component with options 1`] = `
                       viewBox="0 0 32 32"
                     >
                       <svg
-                        className="sc-ifAKCX lgTGPa"
+                        className="csx__IconWrapper-sc-15pjeas-0 igSHhC"
                         focusable="false"
                         viewBox="0 0 32 32"
                       >
@@ -549,12 +489,12 @@ exports[`Dropdown renders component with options 1`] = `
                         />
                       </svg>
                     </StyledComponent>
-                  </styled.svg>
+                  </csx__IconWrapper>
                 </Icon>
               </div>
             </StyledComponent>
-          </styled.div>
-          <styled.div
+          </csx__DropdownPlaceholder>
+          <csx__DropdownOptions
             open={false}
           >
             <StyledComponent
@@ -563,21 +503,18 @@ exports[`Dropdown renders component with options 1`] = `
                   "$$typeof": Symbol(react.forward_ref),
                   "attrs": Array [],
                   "componentStyle": ComponentStyle {
-                    "componentId": "sc-bwzfXH",
+                    "componentId": "csx__DropdownOptions-q2vx2b-1",
                     "isStatic": false,
-                    "lastClassName": "kIdcZD",
+                    "lastClassName": "liXgLH",
                     "rules": Array [
-                      "
-  ",
                       [Function],
-                      ";
-",
+                      ";",
                     ],
                   },
-                  "displayName": "styled.div",
+                  "displayName": "csx__DropdownOptions",
                   "foldedComponentIds": Array [],
                   "render": [Function],
-                  "styledComponentId": "sc-bwzfXH",
+                  "styledComponentId": "csx__DropdownOptions-q2vx2b-1",
                   "target": "div",
                   "toString": [Function],
                   "usesTheme": false,
@@ -589,10 +526,10 @@ exports[`Dropdown renders component with options 1`] = `
               open={false}
             >
               <div
-                className="sc-bwzfXH kIdcZD"
+                className="csx__DropdownOptions-q2vx2b-1 liXgLH"
                 open={false}
               >
-                <styled.div
+                <csx__DropdownOption
                   key="0"
                   onClick={[Function]}
                   selected={false}
@@ -603,27 +540,17 @@ exports[`Dropdown renders component with options 1`] = `
                         "$$typeof": Symbol(react.forward_ref),
                         "attrs": Array [],
                         "componentStyle": ComponentStyle {
-                          "componentId": "sc-htpNat",
+                          "componentId": "csx__DropdownOption-q2vx2b-2",
                           "isStatic": false,
-                          "lastClassName": "heUfhF",
+                          "lastClassName": "brxqMp",
                           "rules": Array [
-                            "
-  padding: 0.25em 0.5em;
-
-  &:hover {
-    background-color: #eee;
-  }
-
-  &:active {
-    background-color: #ddd;
-  }
-",
+                            "padding:0.25em 0.5em;&:hover{background-color:#eee;}&:active{background-color:#ddd;}",
                           ],
                         },
-                        "displayName": "styled.div",
+                        "displayName": "csx__DropdownOption",
                         "foldedComponentIds": Array [],
                         "render": [Function],
-                        "styledComponentId": "sc-htpNat",
+                        "styledComponentId": "csx__DropdownOption-q2vx2b-2",
                         "target": "div",
                         "toString": [Function],
                         "usesTheme": false,
@@ -636,15 +563,15 @@ exports[`Dropdown renders component with options 1`] = `
                     selected={false}
                   >
                     <div
-                      className="sc-htpNat heUfhF"
+                      className="csx__DropdownOption-q2vx2b-2 brxqMp"
                       onClick={[Function]}
                       selected={false}
                     >
                       1
                     </div>
                   </StyledComponent>
-                </styled.div>
-                <styled.div
+                </csx__DropdownOption>
+                <csx__DropdownOption
                   key="1"
                   onClick={[Function]}
                   selected={false}
@@ -655,27 +582,17 @@ exports[`Dropdown renders component with options 1`] = `
                         "$$typeof": Symbol(react.forward_ref),
                         "attrs": Array [],
                         "componentStyle": ComponentStyle {
-                          "componentId": "sc-htpNat",
+                          "componentId": "csx__DropdownOption-q2vx2b-2",
                           "isStatic": false,
-                          "lastClassName": "heUfhF",
+                          "lastClassName": "brxqMp",
                           "rules": Array [
-                            "
-  padding: 0.25em 0.5em;
-
-  &:hover {
-    background-color: #eee;
-  }
-
-  &:active {
-    background-color: #ddd;
-  }
-",
+                            "padding:0.25em 0.5em;&:hover{background-color:#eee;}&:active{background-color:#ddd;}",
                           ],
                         },
-                        "displayName": "styled.div",
+                        "displayName": "csx__DropdownOption",
                         "foldedComponentIds": Array [],
                         "render": [Function],
-                        "styledComponentId": "sc-htpNat",
+                        "styledComponentId": "csx__DropdownOption-q2vx2b-2",
                         "target": "div",
                         "toString": [Function],
                         "usesTheme": false,
@@ -688,15 +605,15 @@ exports[`Dropdown renders component with options 1`] = `
                     selected={false}
                   >
                     <div
-                      className="sc-htpNat heUfhF"
+                      className="csx__DropdownOption-q2vx2b-2 brxqMp"
                       onClick={[Function]}
                       selected={false}
                     >
                       2
                     </div>
                   </StyledComponent>
-                </styled.div>
-                <styled.div
+                </csx__DropdownOption>
+                <csx__DropdownOption
                   key="2"
                   onClick={[Function]}
                   selected={false}
@@ -707,27 +624,17 @@ exports[`Dropdown renders component with options 1`] = `
                         "$$typeof": Symbol(react.forward_ref),
                         "attrs": Array [],
                         "componentStyle": ComponentStyle {
-                          "componentId": "sc-htpNat",
+                          "componentId": "csx__DropdownOption-q2vx2b-2",
                           "isStatic": false,
-                          "lastClassName": "heUfhF",
+                          "lastClassName": "brxqMp",
                           "rules": Array [
-                            "
-  padding: 0.25em 0.5em;
-
-  &:hover {
-    background-color: #eee;
-  }
-
-  &:active {
-    background-color: #ddd;
-  }
-",
+                            "padding:0.25em 0.5em;&:hover{background-color:#eee;}&:active{background-color:#ddd;}",
                           ],
                         },
-                        "displayName": "styled.div",
+                        "displayName": "csx__DropdownOption",
                         "foldedComponentIds": Array [],
                         "render": [Function],
-                        "styledComponentId": "sc-htpNat",
+                        "styledComponentId": "csx__DropdownOption-q2vx2b-2",
                         "target": "div",
                         "toString": [Function],
                         "usesTheme": false,
@@ -740,15 +647,15 @@ exports[`Dropdown renders component with options 1`] = `
                     selected={false}
                   >
                     <div
-                      className="sc-htpNat heUfhF"
+                      className="csx__DropdownOption-q2vx2b-2 brxqMp"
                       onClick={[Function]}
                       selected={false}
                     >
                       3
                     </div>
                   </StyledComponent>
-                </styled.div>
-                <styled.div
+                </csx__DropdownOption>
+                <csx__DropdownOption
                   key="3"
                   onClick={[Function]}
                   selected={false}
@@ -759,27 +666,17 @@ exports[`Dropdown renders component with options 1`] = `
                         "$$typeof": Symbol(react.forward_ref),
                         "attrs": Array [],
                         "componentStyle": ComponentStyle {
-                          "componentId": "sc-htpNat",
+                          "componentId": "csx__DropdownOption-q2vx2b-2",
                           "isStatic": false,
-                          "lastClassName": "heUfhF",
+                          "lastClassName": "brxqMp",
                           "rules": Array [
-                            "
-  padding: 0.25em 0.5em;
-
-  &:hover {
-    background-color: #eee;
-  }
-
-  &:active {
-    background-color: #ddd;
-  }
-",
+                            "padding:0.25em 0.5em;&:hover{background-color:#eee;}&:active{background-color:#ddd;}",
                           ],
                         },
-                        "displayName": "styled.div",
+                        "displayName": "csx__DropdownOption",
                         "foldedComponentIds": Array [],
                         "render": [Function],
-                        "styledComponentId": "sc-htpNat",
+                        "styledComponentId": "csx__DropdownOption-q2vx2b-2",
                         "target": "div",
                         "toString": [Function],
                         "usesTheme": false,
@@ -792,15 +689,15 @@ exports[`Dropdown renders component with options 1`] = `
                     selected={false}
                   >
                     <div
-                      className="sc-htpNat heUfhF"
+                      className="csx__DropdownOption-q2vx2b-2 brxqMp"
                       onClick={[Function]}
                       selected={false}
                     >
                       4
                     </div>
                   </StyledComponent>
-                </styled.div>
-                <styled.div
+                </csx__DropdownOption>
+                <csx__DropdownOption
                   key="4"
                   onClick={[Function]}
                   selected={false}
@@ -811,27 +708,17 @@ exports[`Dropdown renders component with options 1`] = `
                         "$$typeof": Symbol(react.forward_ref),
                         "attrs": Array [],
                         "componentStyle": ComponentStyle {
-                          "componentId": "sc-htpNat",
+                          "componentId": "csx__DropdownOption-q2vx2b-2",
                           "isStatic": false,
-                          "lastClassName": "heUfhF",
+                          "lastClassName": "brxqMp",
                           "rules": Array [
-                            "
-  padding: 0.25em 0.5em;
-
-  &:hover {
-    background-color: #eee;
-  }
-
-  &:active {
-    background-color: #ddd;
-  }
-",
+                            "padding:0.25em 0.5em;&:hover{background-color:#eee;}&:active{background-color:#ddd;}",
                           ],
                         },
-                        "displayName": "styled.div",
+                        "displayName": "csx__DropdownOption",
                         "foldedComponentIds": Array [],
                         "render": [Function],
-                        "styledComponentId": "sc-htpNat",
+                        "styledComponentId": "csx__DropdownOption-q2vx2b-2",
                         "target": "div",
                         "toString": [Function],
                         "usesTheme": false,
@@ -844,20 +731,20 @@ exports[`Dropdown renders component with options 1`] = `
                     selected={false}
                   >
                     <div
-                      className="sc-htpNat heUfhF"
+                      className="csx__DropdownOption-q2vx2b-2 brxqMp"
                       onClick={[Function]}
                       selected={false}
                     >
                       5
                     </div>
                   </StyledComponent>
-                </styled.div>
+                </csx__DropdownOption>
               </div>
             </StyledComponent>
-          </styled.div>
+          </csx__DropdownOptions>
         </div>
       </StyledComponent>
-    </styled.div>
+    </csx__DropdownWrapper>
   </Dropdown>
 </DropdownContainer>
 `;

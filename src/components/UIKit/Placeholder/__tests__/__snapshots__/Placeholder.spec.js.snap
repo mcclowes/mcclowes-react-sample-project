@@ -2,7 +2,7 @@
 
 exports[`Placeholder renders default component 1`] = `
 <Fragment>
-  <styled.div
+  <csx__PlaceholderWrapper
     key="0"
   />
 </Fragment>

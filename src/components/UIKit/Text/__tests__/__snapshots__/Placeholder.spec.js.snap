@@ -7,21 +7,18 @@ exports[`Text Header renders default component 1`] = `
       "$$typeof": Symbol(react.forward_ref),
       "attrs": Array [],
       "componentStyle": ComponentStyle {
-        "componentId": "sc-bwzfXH",
+        "componentId": "csx__Paragraph-sc-5c5e0o-1",
         "isStatic": false,
         "rules": Array [
-          "
-  color: ",
+          "color:",
           [Function],
-          ";
-  font-family: Helventica, Arial, sans-serif;
-",
+          ";font-family:Helventica,Arial,sans-serif;",
         ],
       },
-      "displayName": "styled.p",
+      "displayName": "csx__Paragraph",
       "foldedComponentIds": Array [],
       "render": [Function],
-      "styledComponentId": "sc-bwzfXH",
+      "styledComponentId": "csx__Paragraph-sc-5c5e0o-1",
       "target": "p",
       "toString": [Function],
       "usesTheme": true,
@@ -42,21 +39,18 @@ exports[`Text Text renders default component 1`] = `
       "$$typeof": Symbol(react.forward_ref),
       "attrs": Array [],
       "componentStyle": ComponentStyle {
-        "componentId": "sc-bwzfXH",
+        "componentId": "csx__Paragraph-sc-5c5e0o-1",
         "isStatic": false,
         "rules": Array [
-          "
-  color: ",
+          "color:",
           [Function],
-          ";
-  font-family: Helventica, Arial, sans-serif;
-",
+          ";font-family:Helventica,Arial,sans-serif;",
         ],
       },
-      "displayName": "styled.p",
+      "displayName": "csx__Paragraph",
       "foldedComponentIds": Array [],
       "render": [Function],
-      "styledComponentId": "sc-bwzfXH",
+      "styledComponentId": "csx__Paragraph-sc-5c5e0o-1",
       "target": "p",
       "toString": [Function],
       "usesTheme": true,
@@ -77,21 +71,18 @@ exports[`Text Text renders default component 2`] = `
       "$$typeof": Symbol(react.forward_ref),
       "attrs": Array [],
       "componentStyle": ComponentStyle {
-        "componentId": "sc-bwzfXH",
+        "componentId": "csx__Paragraph-sc-5c5e0o-1",
         "isStatic": false,
         "rules": Array [
-          "
-  color: ",
+          "color:",
           [Function],
-          ";
-  font-family: Helventica, Arial, sans-serif;
-",
+          ";font-family:Helventica,Arial,sans-serif;",
         ],
       },
-      "displayName": "styled.p",
+      "displayName": "csx__Paragraph",
       "foldedComponentIds": Array [],
       "render": [Function],
-      "styledComponentId": "sc-bwzfXH",
+      "styledComponentId": "csx__Paragraph-sc-5c5e0o-1",
       "target": "p",
       "toString": [Function],
       "usesTheme": true,
@@ -112,21 +103,18 @@ exports[`Text renders default component 1`] = `
       "$$typeof": Symbol(react.forward_ref),
       "attrs": Array [],
       "componentStyle": ComponentStyle {
-        "componentId": "sc-bwzfXH",
+        "componentId": "csx__Paragraph-sc-5c5e0o-1",
         "isStatic": false,
         "rules": Array [
-          "
-  color: ",
+          "color:",
           [Function],
-          ";
-  font-family: Helventica, Arial, sans-serif;
-",
+          ";font-family:Helventica,Arial,sans-serif;",
         ],
       },
-      "displayName": "styled.p",
+      "displayName": "csx__Paragraph",
       "foldedComponentIds": Array [],
       "render": [Function],
-      "styledComponentId": "sc-bwzfXH",
+      "styledComponentId": "csx__Paragraph-sc-5c5e0o-1",
       "target": "p",
       "toString": [Function],
       "usesTheme": true,
