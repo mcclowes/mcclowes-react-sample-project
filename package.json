@@ -22,6 +22,7 @@
     "pretty-quick": "^1.11.1"
   },
   "scripts": {
+    "format": "pretty-quick --staged",
     "start": "react-scripts start",
     "storybook": "start-storybook",
     "build": "react-scripts build",
@@ -33,8 +34,8 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "pretty-quick --staged && npm test",
-      "pre-push": "npm test"
+      "pre-commit": "npm run format && npm run test",
+      "pre-push": "npm run test"
     }
   },
   "eslintConfig": {
