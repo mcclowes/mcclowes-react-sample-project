@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "enzyme": "^3.10.0",
     "react": "^16.10.1",
     "react-dom": "^16.10.1",
     "react-helmet": "^5.2.1",
@@ -12,6 +11,15 @@
     "react-scripts": "3.1.2",
     "react-test-renderer": "^16.10.1",
     "styled-components": "^4.4.0"
+  },
+  "devDependencies": {
+    "@storybook/react": "^5.2.4",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.15.1",
+    "enzyme-to-json": "^3.4.0",
+    "husky": "^3.0.7",
+    "prettier": "^1.18.2",
+    "pretty-quick": "^1.11.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -55,13 +63,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "@storybook/react": "^5.2.4",
-    "enzyme-adapter-react-16": "^1.15.1",
-    "enzyme-to-json": "^3.4.0",
-    "husky": "^3.0.7",
-    "prettier": "^1.18.2",
-    "pretty-quick": "^1.11.1"
   }
 }
