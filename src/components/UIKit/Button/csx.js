@@ -32,5 +32,6 @@ export const ButtonWrapper = styled.button`
 
   svg {
     margin-right: 0.5em;
+    fill: ${props => props.theme.colors.white};
   }
 `;

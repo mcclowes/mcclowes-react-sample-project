@@ -7,21 +7,31 @@ const ContentMock = () => {
   return <div>This is in a portal</div>;
 };
 
-describe.skip("Modal", () => {
-  const shallowComponent = (props = {}) => {
-    return shallow(
-      <Modal isOpen={true} doClose={jest.fn()} {...props}>
-        <ContentMock />
-      </Modal>
-    );
-  };
+const shallowComponent = (props = {}) => {
+  const { open = true, handleClose = () => {}, closeIcon = true } = props;
 
-  const shallowAndFind = props => {
-    return shallowComponent(props).find(ReactModal);
-  };
+  return shallow(
+    <Modal open={open} doClose={handleClose} closeIcon={closeIcon}>
+      <ContentMock />
+    </Modal>
+  );
+};
 
-  it("renders as expected", () => {
+describe("Modal", () => {
+  it("renders open", () => {
     const wrapper = shallowComponent();
+
+    expect(wrapper).toMatchSnapshot();
+  });
+
+  it("renders closed", () => {
+    const wrapper = shallowComponent({ open: false });
+
+    expect(wrapper).toMatchSnapshot();
+  });
+
+  it("no icon", () => {
+    const wrapper = shallowComponent({ closeIcon: false });
 
     expect(wrapper).toMatchSnapshot();
   });

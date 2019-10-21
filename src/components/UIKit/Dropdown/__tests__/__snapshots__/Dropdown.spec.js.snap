@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Dropdown renders component 1`] = `
+<Dropdown
+  open={false}
+  placeholder="Default Dropdown"
+  setOpen={[Function]}
+  setValue={[Function]}
+/>
+`;
+
+exports[`Dropdown renders component with options 1`] = `
+<Dropdown
+  open={false}
+  options={
+    Array [
+      1,
+      2,
+      3,
+      4,
+      5,
+    ]
+  }
+  placeholder="Default Dropdown"
+  setOpen={[Function]}
+  setValue={[Function]}
+/>
+`;

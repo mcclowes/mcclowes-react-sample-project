@@ -7,10 +7,11 @@ export const DropdownPlaceholder = styled.div`
   flex-direction: row;
   align-items: center;
 
-  ${props => (props.value ? "" : "color: #aaa;")};
+  ${props => (props.value === undefined ? "color: #aaa;" : "")};
 
   svg {
     fill: #aaa;
+    transform: ${props => (props.open ? "rotate(180deg);" : "")};
   }
 `;
 
@@ -34,4 +35,5 @@ export const DropdownWrapper = styled.div`
   border: 1px solid #aaa;
   border-radius: 3px;
   cursor: pointer;
+  background: white;
 `;

@@ -12,10 +12,10 @@ const Dropdown = props => {
 
   return (
     <DropdownWrapper onClick={() => setOpen(!open)}>
-      <DropdownPlaceholder value={value}>
-        {value || placeholder}
+      <DropdownPlaceholder value={value} open={open}>
+        {value === undefined ? placeholder : value}
 
-        <Icon icon="TICK" />
+        <Icon icon="DOWN" />
       </DropdownPlaceholder>
 
       {options && (

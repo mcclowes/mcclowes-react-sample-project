@@ -1,13 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Button hovers 1`] = `
-<csx__ButtonWrapper
-  to="/"
->
-  Default Button
-</csx__ButtonWrapper>
-`;
-
 exports[`Button renders component 1`] = `
 <csx__ButtonWrapper
   to="/"
