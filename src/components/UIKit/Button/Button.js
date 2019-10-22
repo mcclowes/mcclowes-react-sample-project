@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import React from "react";
 import { ButtonWrapper } from "./csx";
 
@@ -10,6 +11,13 @@ const Button = props => {
       {children}
     </ButtonWrapper>
   );
+};
+
+Button.propTypes = {
+  children: PropTypes.any,
+  doClick: PropTypes.func,
+  text: PropTypes.string,
+  to: PropTypes.string
 };
 
 export default Button;

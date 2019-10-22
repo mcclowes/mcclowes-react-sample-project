@@ -1,11 +1,13 @@
+import Icon from "../Icon";
+import PropTypes from "prop-types";
 import React from "react";
+
 import {
   DropdownWrapper,
   DropdownPlaceholder,
   DropdownOptions,
   DropdownOption
 } from "./csx";
-import Icon from "../Icon";
 
 const Dropdown = props => {
   const { placeholder, options, open, setOpen, value, handleClick } = props;
@@ -35,6 +37,15 @@ const Dropdown = props => {
       )}
     </DropdownWrapper>
   );
+};
+
+Dropdown.propTypes = {
+  handleClick: PropTypes.func,
+  open: PropTypes.bool,
+  options: PropTypes.array,
+  placeholder: PropTypes.string,
+  setOpen: PropTypes.func,
+  value: PropTypes.any
 };
 
 export default Dropdown;

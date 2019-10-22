@@ -79,7 +79,9 @@ Modal.Inner = Inner;
 
 Modal.propTypes = {
   children: PropTypes.node,
+  closeIcon: PropTypes.bool,
   doClose: PropTypes.func,
+  open: PropTypes.bool,
   trigger: PropTypes.any
 };
 

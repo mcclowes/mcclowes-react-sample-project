@@ -1,5 +1,6 @@
-import React, { useState } from "react";
 import Dropdown from "./Dropdown";
+import PropTypes from "prop-types";
+import React, { useState } from "react";
 
 const DropdownContainer = props => {
   const [open, setOpen] = useState(false);
@@ -23,6 +24,10 @@ const DropdownContainer = props => {
       {...props}
     />
   );
+};
+
+DropdownContainer.propTypes = {
+  callback: PropTypes.func
 };
 
 export default DropdownContainer;
