@@ -1,5 +1,7 @@
 # mcclowes-react-sample-project
 
+[![CircleCI](https://circleci.com/gh/mcclowes/mcclowes-react-sample-project.svg?style=svg)](https://circleci.com/gh/mcclowes/mcclowes-react-sample-project)
+
 This project includes:
 
 - Useful dependencies
