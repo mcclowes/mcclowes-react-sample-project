@@ -8,6 +8,11 @@ const theme = {
     gray: "#aaaaaa",
     lightgray: "#eeeeee",
     error: "#DD3437"
+  },
+  sizes: {
+    border: {
+      radius: "5px"
+    }
   }
 };
 

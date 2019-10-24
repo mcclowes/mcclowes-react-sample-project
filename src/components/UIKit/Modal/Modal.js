@@ -8,46 +8,12 @@ import Content from "./Content";
 import Header from "./Header";
 import Inner from "./Inner";
 
-const defaultStyles = {
-  overlay: {
-    alignItems: "center",
-    backgroundColor: "rgba(50,50,50,.75)",
-    display: "flex",
-    justifyContent: "center",
-    transition: "opacity 200ms ease-in-out",
-    zIndex: 1000 // must be equal to semantics modal
-  },
-  content: {
-    background: "none",
-    border: "none",
-    borderRadius: "3px",
-    bottom: "auto",
-    left: "auto",
-    maxHeight: "90vh",
-    maxWidth: "90vw",
-    overflow: "hidden",
-    padding: "0",
-    position: "relative",
-    right: "auto",
-    top: "auto",
-    display: "flex",
-    alignItems: "center"
-  }
-};
+import "./modal.css";
 
 if (process.env.NODE_ENV !== "test") ReactModal.setAppElement("#root");
 
 const Modal = props => {
   const { children, doClose, open, closeIcon, trigger } = props;
-
-  const style = {
-    overlay: {
-      ...defaultStyles.overlay
-    },
-    content: {
-      ...defaultStyles.content
-    }
-  };
 
   return (
     <>
@@ -60,7 +26,8 @@ const Modal = props => {
           shouldCloseOnEsc={true}
           shouldCloseOnOverlayClick={true}
           onRequestClose={doClose}
-          style={style}
+          className="modal-wrapper"
+          overlayClassName="modal-overlay"
         >
           {closeIcon && doClose && <Close onClick={doClose} />}
 

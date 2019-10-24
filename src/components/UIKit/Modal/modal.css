@@ -1,0 +1,26 @@
+.modal-overlay {
+  align-items: center;
+  background-color: rgba(50, 50, 50, 0.75);
+  display: flex;
+  justify-content: center;
+  transition: opacity 200ms ease-in-out;
+  z-index: 1000;
+  padding: 1em;
+}
+
+.modal-wrapper {
+  background: none;
+  border: none;
+  border-radius: 5px;
+  bottom: auto;
+  left: auto;
+  max-height: 90vh;
+  max-width: 90vw;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+  right: auto;
+  top: auto;
+  display: flex;
+  align-items: center;
+}

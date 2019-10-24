@@ -17,7 +17,7 @@ export const PageWrapper = styled("div")`
 
 export const Page = styled("div")`
   background: ${props => props.theme.colors.white};
-  border-radius: 3px;
+  border-radius: ${props => props.theme.sizes.border.radius};
   display: flex;
   flex-direction: column;
   padding: 1em 2em;

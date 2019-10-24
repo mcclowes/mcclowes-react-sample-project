@@ -2,7 +2,7 @@ import styled from "styled-components/macro";
 
 export const ButtonWrapper = styled.button`
   background: ${props => props.theme.colors.primary};
-  border-radius: 3px;
+  border-radius: ${props => props.theme.sizes.border.radius};
   border: none;
   color: ${props => props.theme.colors.white};
   cursor: pointer;
@@ -41,6 +41,11 @@ ButtonWrapper.defaultProps = {
     colors: {
       primary: "#aaa",
       alt: "#888"
+    },
+    sizes: {
+      border: {
+        radius: "3px"
+      }
     }
   }
 };
