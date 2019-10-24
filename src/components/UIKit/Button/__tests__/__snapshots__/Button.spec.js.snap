@@ -2,11 +2,13 @@
 
 exports[`Button renders component 1`] = `
 <csx__ButtonWrapper
+  subtle={false}
   theme={
     Object {
       "colors": Object {
-        "alt": "#888",
-        "primary": "#aaa",
+        "alt": "#888888",
+        "primary": "#aaaaaa",
+        "white": "#ffffff",
       },
       "sizes": Object {
         "border": Object {
