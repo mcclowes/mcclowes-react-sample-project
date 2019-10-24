@@ -8,6 +8,11 @@ exports[`Button renders component 1`] = `
         "alt": "#888",
         "primary": "#aaa",
       },
+      "sizes": Object {
+        "border": Object {
+          "radius": "3px",
+        },
+      },
     }
   }
   to="/"

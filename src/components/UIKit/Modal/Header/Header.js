@@ -1,9 +1,5 @@
 import React from "react";
-import styled from "styled-components/macro";
-
-const HeaderWrapper = styled.div`
-  padding: 1em;
-`;
+import { HeaderWrapper } from "./csx";
 
 const Header = props => {
   const { children } = props;

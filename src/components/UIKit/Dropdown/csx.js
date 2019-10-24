@@ -38,7 +38,7 @@ export const DropdownOption = styled.div``;
 
 export const DropdownWrapper = styled.div`
   border: 1px solid ${props => props.theme.colors.gray};
-  border-radius: 3px;
+  border-radius: ${props => props.theme.sizes.border.radius};
   cursor: pointer;
   background: ${props => props.theme.colors.white};
 
@@ -68,6 +68,11 @@ DropdownWrapper.defaultProps = {
       white: "#ffffff",
       gray: "#aaaaaa",
       lightgray: "#eeeeee"
+    },
+    sizes: {
+      border: {
+        radius: "3px"
+      }
     }
   }
 };

@@ -1,12 +1,12 @@
-import React from "react";
 import styled from "styled-components/macro";
 
-const InnerWrapper = styled.div`
+export const InnerWrapper = styled.div`
   background-color: white;
   margin: 0 !important;
   max-height: 100%;
   max-height: 90vh;
   max-width: 100%;
+  min-width: 100%; // ????
   //min-width: 680px;
   width: 680px;
   overflow: auto;
@@ -37,11 +37,3 @@ const InnerWrapper = styled.div`
     max-width: 920px;
   `};
 `;
-
-const Inner = props => {
-  const { children, size = "small" } = props;
-
-  return <InnerWrapper data-modal-size={size}>{children}</InnerWrapper>;
-};
-
-export default Inner;
