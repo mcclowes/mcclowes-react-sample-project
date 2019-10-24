@@ -1,26 +1,45 @@
 .modal-overlay {
   align-items: center;
   background-color: rgba(50, 50, 50, 0.75);
+  bottom: 0px;
   display: flex;
   justify-content: center;
-  transition: opacity 200ms ease-in-out;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  transition: opacity 200ms ease-in-out 0s;
   z-index: 1000;
   padding: 1em;
+  position: fixed;
+  transition: opacity 200ms ease-in-out;
+}
+
+@media only screen and (max-width: 768px) {
+  .modal-overlay {
+    align-items: flex-end;
+  }
 }
 
 .modal-wrapper {
+  align-items: center;
   background: none;
-  border: none;
   border-radius: 5px;
+  border: none;
   bottom: auto;
+  display: flex;
   left: auto;
   max-height: 90vh;
   max-width: 90vw;
+  outline: none;
   overflow: hidden;
   padding: 0;
   position: relative;
   right: auto;
   top: auto;
-  display: flex;
-  align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .modal-wrapper {
+    min-width: 100%;
+  }
 }

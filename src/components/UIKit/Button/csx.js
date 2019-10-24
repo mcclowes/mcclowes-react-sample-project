@@ -1,17 +1,25 @@
 import styled from "styled-components/macro";
 
 export const ButtonWrapper = styled.button`
-  background: ${props => props.theme.colors.primary};
   border-radius: ${props => props.theme.sizes.border.radius};
-  border: none;
-  color: ${props => props.theme.colors.white};
   cursor: pointer;
   font-size: 14px;
   padding: 0.5em 1em;
-  border: 2px solid ${props => props.theme.colors.primary};
   display: flex;
   justify-items: center;
   align-items: center;
+  border: 2px solid ${props => props.theme.colors.primary};
+
+  ${props =>
+    props.subtle
+      ? `
+      background: ${props.theme.colors.white};
+      color: ${props.theme.colors.primary};
+    `
+      : `
+      background: ${props.theme.colors.primary};
+      color: ${props.theme.colors.white};
+    `}
 
   &:hover {
     opacity: 0.75;
@@ -39,13 +47,15 @@ export const ButtonWrapper = styled.button`
 ButtonWrapper.defaultProps = {
   theme: {
     colors: {
-      primary: "#aaa",
-      alt: "#888"
+      primary: "#aaaaaa",
+      alt: "#888888",
+      white: "#ffffff"
     },
     sizes: {
       border: {
         radius: "3px"
       }
     }
-  }
+  },
+  subtle: false
 };

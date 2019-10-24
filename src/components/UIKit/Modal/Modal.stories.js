@@ -31,7 +31,7 @@ export const structured = () => {
 
         <Modal.Actions>
           <Padded space="p3">
-            <Button text="Close" />
+            <Button subtle={true} text="Close" />
           </Padded>
           <Padded space="p3">
             <Button text="Submit" />
@@ -66,7 +66,7 @@ const ControlledView = () => {
 
         <Modal.Actions>
           <Padded space="p3">
-            <Button doClick={() => setOpen(false)} text="Close" />
+            <Button doClick={() => setOpen(false)} subtle={true} text="Close" />
           </Padded>
           <Padded space="p3">
             <Button doClick={() => setOpen(false)} text="Submit" />

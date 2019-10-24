@@ -24,3 +24,7 @@ export const withIcon = () => {
     </Button>
   );
 };
+
+export const subtle = () => {
+  return <Button subtle={true}>Hello World</Button>;
+};
