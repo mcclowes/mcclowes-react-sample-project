@@ -41,3 +41,7 @@ This repo comes equipped with a few simple customisable components, in the UIKit
 These UIKit components can be viewed by running:
 
 `npm run storybook`
+
+## Contributing
+
+If you'd like to contribute, please fork the repository and use a feature branch. Pull requests are welcome!
