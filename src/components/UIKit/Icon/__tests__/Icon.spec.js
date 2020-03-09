@@ -1,10 +1,10 @@
 import React from "react";
 import Icon from "../Icon";
-import Icons from "../Icons";
+import icons from "../icons";
 import { shallow } from "enzyme";
 
 const defaultProps = {
-  path: Icons.TICK
+  path: icons.TICK
 };
 
 const renderComponent = newProps => {
