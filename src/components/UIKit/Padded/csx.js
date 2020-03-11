@@ -1,43 +1,31 @@
 import styled from "styled-components/macro";
 
+const spaces = {
+  0: "0",
+  1: "0.125em",
+  2: "0.25em",
+  3: "0.5em",
+  4: "0.75em",
+  5: "1em"
+};
+
+const getDirection = direction => {
+  if (direction === "t") return "-top";
+  if (direction === "b") return "-bottom";
+  if (direction === "l") return "-left";
+  if (direction === "r") return "-right";
+  return "";
+};
+
+const getSpacing = space => {
+  const [padding, amount] = space.match(/[a-z]+|[^a-z]+/gi);
+
+  const spaceType = padding.split("")[0] === "p" ? "padding" : "margin";
+  const direction = getDirection(padding.split("")[1]);
+
+  return spaceType + direction + ": " + spaces[amount];
+};
+
 export const PaddedWrapper = styled.div`
-  ${props => (props.space === "p1" ? "padding: 0.125em;" : "")};
-  ${props => (props.space === "p2" ? "padding: 0.25em;" : "")};
-  ${props => (props.space === "p3" ? "padding: 0.5em;" : "")};
-  ${props => (props.space === "p4" ? "padding: 0.75em;" : "")};
-  ${props => (props.space === "p5" ? "padding: 1em;" : "")};
-
-  ${props =>
-    props.space === "py1"
-      ? "padding-top: 0.125em; padding-bottom: 0.125em;"
-      : ""};
-  ${props =>
-    props.space === "py2"
-      ? "padding-top: 0.25em; padding-bottom: 0.25em;"
-      : ""};
-  ${props =>
-    props.space === "py3" ? "padding-top: 0.5em; padding-bottom: 0.5em;" : ""};
-  ${props =>
-    props.space === "py4"
-      ? "padding-top: 0.75em; padding-bottom: 0.75em;"
-      : ""};
-  ${props =>
-    props.space === "py5" ? "padding-top: 1em; padding-bottom: 1em;" : ""};
-
-  ${props =>
-    props.space === "px1"
-      ? "padding-left: 0.125em; padding-right: 0.125em;"
-      : ""};
-  ${props =>
-    props.space === "px2"
-      ? "padding-left: 0.25em; padding-right: 0.25em;"
-      : ""};
-  ${props =>
-    props.space === "px3" ? "padding-left: 0.5em; padding-right: 0.5em;" : ""};
-  ${props =>
-    props.space === "px4"
-      ? "padding-left: 0.75em; padding-right: 0.75em;"
-      : ""};
-  ${props =>
-    props.space === "px5" ? "padding-left: 1em; padding-right: 1em;" : ""};
+  ${props => props.space && getSpacing(props.space)};
 `;

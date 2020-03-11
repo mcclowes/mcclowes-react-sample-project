@@ -17,8 +17,24 @@ let wrapper;
 
 describe("Padded", () => {
   it("renders default component", () => {
-    wrapper = renderComponent();
+    expect(renderComponent()).toMatchSnapshot();
+  });
 
-    expect(wrapper).toMatchSnapshot();
+  it("renders correct padding", () => {
+    expect(renderComponent({ space: "p0" })).toMatchSnapshot();
+    expect(renderComponent({ space: "pr1" })).toMatchSnapshot();
+    expect(renderComponent({ space: "p2" })).toMatchSnapshot();
+    expect(renderComponent({ space: "pt3" })).toMatchSnapshot();
+    expect(renderComponent({ space: "pb4" })).toMatchSnapshot();
+    expect(renderComponent({ space: "pl5" })).toMatchSnapshot();
+  });
+
+  it("renders correct margin", () => {
+    expect(renderComponent({ space: "m0" })).toMatchSnapshot();
+    expect(renderComponent({ space: "mr1" })).toMatchSnapshot();
+    expect(renderComponent({ space: "m2" })).toMatchSnapshot();
+    expect(renderComponent({ space: "mt3" })).toMatchSnapshot();
+    expect(renderComponent({ space: "mb4" })).toMatchSnapshot();
+    expect(renderComponent({ space: "ml5" })).toMatchSnapshot();
   });
 });

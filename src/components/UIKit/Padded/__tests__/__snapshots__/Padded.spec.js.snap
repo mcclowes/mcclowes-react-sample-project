@@ -1,5 +1,77 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Padded renders correct margin 1`] = `
+<csx__PaddedWrapper
+  space="m0"
+/>
+`;
+
+exports[`Padded renders correct margin 2`] = `
+<csx__PaddedWrapper
+  space="mr1"
+/>
+`;
+
+exports[`Padded renders correct margin 3`] = `
+<csx__PaddedWrapper
+  space="m2"
+/>
+`;
+
+exports[`Padded renders correct margin 4`] = `
+<csx__PaddedWrapper
+  space="mt3"
+/>
+`;
+
+exports[`Padded renders correct margin 5`] = `
+<csx__PaddedWrapper
+  space="mb4"
+/>
+`;
+
+exports[`Padded renders correct margin 6`] = `
+<csx__PaddedWrapper
+  space="ml5"
+/>
+`;
+
+exports[`Padded renders correct padding 1`] = `
+<csx__PaddedWrapper
+  space="p0"
+/>
+`;
+
+exports[`Padded renders correct padding 2`] = `
+<csx__PaddedWrapper
+  space="pr1"
+/>
+`;
+
+exports[`Padded renders correct padding 3`] = `
+<csx__PaddedWrapper
+  space="p2"
+/>
+`;
+
+exports[`Padded renders correct padding 4`] = `
+<csx__PaddedWrapper
+  space="pt3"
+/>
+`;
+
+exports[`Padded renders correct padding 5`] = `
+<csx__PaddedWrapper
+  space="pb4"
+/>
+`;
+
+exports[`Padded renders correct padding 6`] = `
+<csx__PaddedWrapper
+  space="pl5"
+/>
+`;
+
 exports[`Padded renders default component 1`] = `
 <csx__PaddedWrapper
   space="p1"
