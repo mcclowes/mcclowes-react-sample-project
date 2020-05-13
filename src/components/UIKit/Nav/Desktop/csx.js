@@ -1,5 +1,6 @@
 import styled from "styled-components/macro";
 import { NavLink } from "react-router-dom";
+import Breakpoint from "../../Breakpoint";
 
 const LinksWrapper = styled.div`
   display: flex;
@@ -15,18 +16,21 @@ const LinkWrapper = styled(NavLink)`
 `;
 
 const LogoWrapper = styled(NavLink)`
-  padding: 0 1em;
+  padding: 0.5em 1em;
   font-size: 1.2em;
 `;
 
-const DesktopWrapper = styled.div`
-  background: ${(props) => props.theme.colors.primary};
-  color: ${(props) => props.theme.colors.lightgray};
+const DesktopWrapper = styled(Breakpoint)`
+  align-items: center;
+  color: ${(props) => props.theme.nav.text};
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding: 1em 2em;
-  align-items: center;
+  position: absolute;
+  width: 100%;
+
+  ${(props) => props.theme.nav.background && `${props.theme.nav.background}`};
 
   ${LinkWrapper},
   ${LogoWrapper} {
@@ -46,9 +50,9 @@ const DesktopWrapper = styled.div`
 
 DesktopWrapper.defaultProps = {
   theme: {
-    colors: {
-      primary: "#DD3437",
-      lightgray: "#eeeeee",
+    nav: {
+      background: "#DD3437",
+      text: "#eeeeee",
     },
   },
 };

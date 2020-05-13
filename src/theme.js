@@ -7,13 +7,17 @@ const theme = {
     black: "#333333",
     gray: "#aaaaaa",
     lightgray: "#eeeeee",
-    error: "#DD3437"
+    error: "#DD3437",
   },
   sizes: {
     border: {
-      radius: "5px"
-    }
-  }
+      radius: "5px",
+    },
+  },
+};
+
+theme.nav = {
+  text: theme.colors.white,
 };
 
 export default theme;

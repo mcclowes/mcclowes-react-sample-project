@@ -1,21 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders component 1`] = `
-<Fragment>
-  <Nav />
-  <csx__PageWrapper>
-    <csx__Page>
-      <SmartContainer>
-        <Text>
-          Hello World!
-        </Text>
-      </SmartContainer>
-      <Dumb>
-        <Text>
-          This is an example project. Make changes as you see fit.
-        </Text>
-      </Dumb>
-    </csx__Page>
-  </csx__PageWrapper>
-</Fragment>
+<csx__PageWrapper>
+  <csx__Page>
+    <SmartContainer>
+      <Text>
+        Hello World!
+      </Text>
+    </SmartContainer>
+    <Dumb>
+      <Text>
+        This is an example project. Make changes as you see fit.
+      </Text>
+    </Dumb>
+  </csx__Page>
+</csx__PageWrapper>
 `;

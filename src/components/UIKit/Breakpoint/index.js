@@ -1,3 +1,3 @@
-import Breakpoint from "./Breakpoint";
+import { Breakpoint } from "./csx";
 
 export default Breakpoint;

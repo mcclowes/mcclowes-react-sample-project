@@ -18,7 +18,9 @@ export const mobile = () => {
     <div>
       Should render at mobile sizes
       <br />
-      <Breakpoint sizes={[true, true]}>Some text</Breakpoint>
+      <Breakpoint sizes={[true, true, false, false, false]}>
+        Some text
+      </Breakpoint>
     </div>
   );
 };
@@ -28,7 +30,7 @@ export const desktop = () => {
     <div>
       Should render at desktop sizes
       <br />
-      <Breakpoint sizes={[false, false, true, true]}>Some text</Breakpoint>
+      <Breakpoint sizes={[false, false]}>Some text</Breakpoint>
     </div>
   );
 };
@@ -38,7 +40,7 @@ export const alwaysShowing = () => {
     <div>
       Should render always
       <br />
-      <Breakpoint sizes={[true, true, true, true]}>Some text</Breakpoint>
+      <Breakpoint>Some text</Breakpoint>
     </div>
   );
 };

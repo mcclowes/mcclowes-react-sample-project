@@ -12,7 +12,7 @@ const Link = (props) => {
 
 const Desktop = (props) => {
   return (
-    <DesktopWrapper>
+    <DesktopWrapper sizes={[false, false, true, true, true]}>
       <Logo>{props.logo}</Logo>
 
       <LinksWrapper>

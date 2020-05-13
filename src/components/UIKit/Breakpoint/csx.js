@@ -3,19 +3,17 @@ import { styles } from "../../utils";
 
 const breakpointSizes = ["xSmall", "small", "medium", "large", "xLarge"];
 
-export const BreakpointWrapper = styled.div`
-  display: none;
-
+export const Breakpoint = styled.div`
   ${(props) =>
     props.sizes &&
     props.sizes.map(
       (size, i) =>
-        !!size &&
+        !size &&
         styles.breakpoints.breakpoint(
           breakpointSizes[i],
           "only",
           `
-                  display: initial;
+                  display: none;
                 `
         )
     )};

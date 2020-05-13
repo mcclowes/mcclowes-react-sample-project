@@ -7,12 +7,19 @@ import {
   LinkWrapper,
   LinksWrapper,
   Overlay,
+  NavBar,
 } from "./csx";
 
 import Burger from "./Burger";
 
+import { useHistory } from "react-router-dom";
+
 const Back = (props) => {
-  return <BackWrapper to="/">{"<"}</BackWrapper>;
+  return (
+    <BackWrapper onClick={props.canGoBack && props.goBack}>
+      {props.canGoBack && "<"}
+    </BackWrapper>
+  );
 };
 
 const Logo = (props) => {
@@ -24,15 +31,18 @@ const Link = (props) => {
 };
 
 const Mobile = (props) => {
+  let history = useHistory();
+  const canGoBack = history.length > 1;
+
   return (
-    <>
-      <MobileWrapper>
-        <Back />
+    <MobileWrapper sizes={[true, true, false, false, false]}>
+      <NavBar>
+        <Back canGoBack={canGoBack} goBack={history.goBack} />
 
         <Logo>{props.logo}</Logo>
 
         <Burger onClick={props.toggleOpen} open={props.open} />
-      </MobileWrapper>
+      </NavBar>
 
       {props.open && (
         <Overlay>
@@ -45,7 +55,7 @@ const Mobile = (props) => {
           </LinksWrapper>
         </Overlay>
       )}
-    </>
+    </MobileWrapper>
   );
 };
 

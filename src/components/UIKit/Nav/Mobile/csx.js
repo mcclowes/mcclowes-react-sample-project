@@ -1,11 +1,13 @@
 import styled from "styled-components/macro";
 import { NavLink } from "react-router-dom";
+import Breakpoint from "../../Breakpoint";
 
-const BackWrapper = styled(NavLink)`
+const BackWrapper = styled.div`
   width: 26px;
   padding: 1em;
   color: white;
   text-decoration: none;
+  cursor: pointer;
 `;
 
 const LogoWrapper = styled(NavLink)`
@@ -18,7 +20,7 @@ const LinksWrapper = styled.div`
   flex-direction: column;
   width: 100%;
   align-items: center;
-  margin-top: 100px;
+  margin-top: 30px;
 `;
 
 const LinkWrapper = styled(NavLink)`
@@ -33,22 +35,22 @@ const LinkWrapper = styled(NavLink)`
 
 const Overlay = styled.div`
   background-color: #ffffffdd;
+  height: calc(100vh - 4em);
   position: absolute;
-  height: 100%;
   width: 100%;
-  top: 0;
 `;
 
-const MobileWrapper = styled.div`
-  background: ${(props) => props.theme.colors.primary};
-  color: ${(props) => props.theme.colors.lightgray};
+const NavBar = styled.div`
+  align-items: center;
+  color: ${(props) => props.theme.nav.text};
   display: flex;
   flex-direction: row;
-  padding: 1em 2em;
   justify-content: space-between;
-  align-items: center;
-  z-index: 1;
+  padding: 1em 2em;
   position: relative;
+  z-index: 1;
+
+  ${(props) => props.theme.nav.background && `${props.theme.nav.background}`};
 
   ${BackWrapper},
   ${LogoWrapper} {
@@ -66,20 +68,26 @@ const MobileWrapper = styled.div`
   }
 `;
 
-MobileWrapper.defaultProps = {
+NavBar.defaultProps = {
   theme: {
-    colors: {
-      primary: "#DD3437",
-      lightgray: "#eeeeee",
+    nav: {
+      background: "#DD3437",
+      text: "#eeeeee",
     },
   },
 };
+
+const MobileWrapper = styled(Breakpoint)`
+  position: absolute;
+  width: 100%;
+`;
 
 export {
   BackWrapper,
   LinkWrapper,
   LinksWrapper,
   LogoWrapper,
-  MobileWrapper,
+  NavBar,
   Overlay,
+  MobileWrapper,
 };
