@@ -1,19 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders component 1`] = `
-<Fragment>
-  <Nav />
-  <csx__PageWrapper>
-    <csx__Page>
-      <Text>
-        Made by 
-        <a
-          href="https://github.com/mcclowes"
-        >
-          @mcclowes
-        </a>
-      </Text>
-    </csx__Page>
-  </csx__PageWrapper>
-</Fragment>
+<csx__PageWrapper>
+  <csx__Page>
+    <Text>
+      Made by 
+      <a
+        href="https://github.com/mcclowes"
+      >
+        @mcclowes
+      </a>
+    </Text>
+  </csx__Page>
+</csx__PageWrapper>
 `;
