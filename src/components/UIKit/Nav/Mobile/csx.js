@@ -1,5 +1,43 @@
 import styled from "styled-components/macro";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+
+const BackWrapper = styled(NavLink)`
+  width: 26px;
+  padding: 1em;
+  color: white;
+  text-decoration: none;
+`;
+
+const LogoWrapper = styled(NavLink)`
+  padding: 0 1em;
+  font-size: 1.2em;
+`;
+
+const LinksWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  margin-top: 100px;
+`;
+
+const LinkWrapper = styled(NavLink)`
+  padding: 0.5em 1em;
+  text-decoration: none;
+  color: black;
+
+  &.active {
+    border-bottom: 1px solid black;
+  }
+`;
+
+const Overlay = styled.div`
+  background-color: #ffffffdd;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+`;
 
 const MobileWrapper = styled.div`
   background: ${(props) => props.theme.colors.primary};
@@ -11,6 +49,21 @@ const MobileWrapper = styled.div`
   align-items: center;
   z-index: 1;
   position: relative;
+
+  ${BackWrapper},
+  ${LogoWrapper} {
+    font-family: Helventica, Arial, sans-serif;
+    text-decoration: none;
+    color: white;
+
+    &:hover {
+      opacity: 0.75;
+    }
+
+    &:active {
+      opacity: 0.5;
+    }
+  }
 `;
 
 MobileWrapper.defaultProps = {
@@ -21,37 +74,6 @@ MobileWrapper.defaultProps = {
     },
   },
 };
-
-const BackWrapper = styled(Link)`
-  width: 26px;
-  padding: 1em;
-  color: white;
-  text-decoration: none;
-`;
-
-const LogoWrapper = styled.div``;
-
-const LinksWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  align-items: center;
-  margin-top: 100px;
-`;
-
-const LinkWrapper = styled(Link)`
-  padding: 0.5em 1em;
-  text-decoration: none;
-  color: black;
-`;
-
-const Overlay = styled.div`
-  background-color: #00000044;
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0;
-`;
 
 export {
   BackWrapper,

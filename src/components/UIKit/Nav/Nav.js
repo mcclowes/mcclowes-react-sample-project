@@ -10,7 +10,7 @@ const Nav = (props) => {
         <Mobile {...props} />
       </Breakpoint>
 
-      <Breakpoint sizes={[false, false, true, true]}>
+      <Breakpoint sizes={[false, false, true, true, true]}>
         <Desktop {...props} />
       </Breakpoint>
     </>

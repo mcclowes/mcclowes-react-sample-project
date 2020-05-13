@@ -12,15 +12,15 @@ import {
 import Burger from "./Burger";
 
 const Back = (props) => {
-  return <BackWrapper>{"<"}</BackWrapper>;
+  return <BackWrapper to="/">{"<"}</BackWrapper>;
 };
 
 const Logo = (props) => {
-  return <LogoWrapper>{props.children}</LogoWrapper>;
+  return <LogoWrapper to="/">{props.children}</LogoWrapper>;
 };
 
 const Link = (props) => {
-  return <LinkWrapper>{props.link.text}</LinkWrapper>;
+  return <LinkWrapper to={props.link.to}>{props.link.text}</LinkWrapper>;
 };
 
 const Mobile = (props) => {
@@ -37,9 +37,11 @@ const Mobile = (props) => {
       {props.open && (
         <Overlay>
           <LinksWrapper>
-            {props.links.map((link, i) => (
-              <Link key={i} link={link} />
-            ))}
+            {props.links
+              .filter((link) => link.to !== "/")
+              .map((link, i) => (
+                <Link key={i} link={link} />
+              ))}
           </LinksWrapper>
         </Overlay>
       )}

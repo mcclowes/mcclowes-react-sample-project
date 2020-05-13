@@ -1,18 +1,19 @@
 import React from "react";
-import { NavWrapper, NavLink } from "./csx";
+import NavUtil from "../../components/UIKit/Nav";
+
+const LINKS = [
+  {
+    to: "/",
+    text: "Main",
+  },
+  {
+    to: "/alt",
+    text: "Alt",
+  },
+];
 
 const Nav = () => {
-  return (
-    <NavWrapper>
-      <NavLink to="/" data-active={window.location.pathname === "/"}>
-        Main
-      </NavLink>
-
-      <NavLink to="/alt" data-active={window.location.pathname === "/alt"}>
-        Alt
-      </NavLink>
-    </NavWrapper>
-  );
+  return <NavUtil logo="mcclowes-react-sample-project" links={LINKS} />;
 };
 
 export default Nav;

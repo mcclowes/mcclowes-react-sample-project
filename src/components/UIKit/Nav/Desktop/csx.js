@@ -1,5 +1,23 @@
 import styled from "styled-components/macro";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+
+const LinksWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+`;
+
+const LinkWrapper = styled(NavLink)`
+  padding: 0.5em 1em;
+
+  &.active {
+    border-bottom: 1px solid white;
+  }
+`;
+
+const LogoWrapper = styled(NavLink)`
+  padding: 0 1em;
+  font-size: 1.2em;
+`;
 
 const DesktopWrapper = styled.div`
   background: ${(props) => props.theme.colors.primary};
@@ -9,6 +27,21 @@ const DesktopWrapper = styled.div`
   justify-content: space-between;
   padding: 1em 2em;
   align-items: center;
+
+  ${LinkWrapper},
+  ${LogoWrapper} {
+    font-family: Helventica, Arial, sans-serif;
+    text-decoration: none;
+    color: white;
+
+    &:hover {
+      opacity: 0.75;
+    }
+
+    &:active {
+      opacity: 0.5;
+    }
+  }
 `;
 
 DesktopWrapper.defaultProps = {
@@ -19,16 +52,5 @@ DesktopWrapper.defaultProps = {
     },
   },
 };
-
-const LogoWrapper = styled.div``;
-
-const LinksWrapper = styled.div`
-  display: flex;
-  flex-direction: row;
-`;
-
-const LinkWrapper = styled(Link)`
-  padding: 0 1em;
-`;
 
 export { DesktopWrapper, LogoWrapper, LinksWrapper, LinkWrapper };
