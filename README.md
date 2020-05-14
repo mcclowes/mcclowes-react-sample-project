@@ -10,6 +10,10 @@ This project includes:
 - UIKit with useful simple components
 - Simple CircleCI configuration
 
+## Demo
+
+Try it here: https://mcclowes-react-sample-project.now.sh/
+
 ## Setting up the project
 
 Install dependencies
