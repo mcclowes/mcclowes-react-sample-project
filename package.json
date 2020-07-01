@@ -19,7 +19,7 @@
     "enzyme-to-json": "^3.5.0",
     "husky": "^4.2.5",
     "prettier": "^2.0.5",
-    "pretty-quick": "^1.11.1"
+    "pretty-quick": "^2.0.1"
   },
   "scripts": {
     "format": "pretty-quick --staged",
