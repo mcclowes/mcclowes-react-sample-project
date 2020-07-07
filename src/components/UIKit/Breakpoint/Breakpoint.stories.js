@@ -1,5 +1,5 @@
 import React from "react";
-import Breakpoint from "./Breakpoint";
+import Breakpoint from "./index";
 
 export default { title: "Breakpoint" };
 

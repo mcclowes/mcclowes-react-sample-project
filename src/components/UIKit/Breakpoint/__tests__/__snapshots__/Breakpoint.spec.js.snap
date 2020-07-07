@@ -1,0 +1,72 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Breakpoint renders component 1`] = `
+<StyledComponent
+  forwardedComponent={
+    Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": Array [],
+      "componentStyle": ComponentStyle {
+        "componentId": "csx__Breakpoint-sc-15987h0-0",
+        "isStatic": false,
+        "rules": Array [
+          [Function],
+          ";",
+        ],
+      },
+      "displayName": "csx__Breakpoint",
+      "foldedComponentIds": Array [],
+      "render": [Function],
+      "styledComponentId": "csx__Breakpoint-sc-15987h0-0",
+      "target": "div",
+      "toString": [Function],
+      "usesTheme": false,
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+    }
+  }
+  forwardedRef={null}
+>
+  Some text
+</StyledComponent>
+`;
+
+exports[`Breakpoint renders component with sizes 1`] = `
+<StyledComponent
+  forwardedComponent={
+    Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": Array [],
+      "componentStyle": ComponentStyle {
+        "componentId": "csx__Breakpoint-sc-15987h0-0",
+        "isStatic": false,
+        "rules": Array [
+          [Function],
+          ";",
+        ],
+      },
+      "displayName": "csx__Breakpoint",
+      "foldedComponentIds": Array [],
+      "render": [Function],
+      "styledComponentId": "csx__Breakpoint-sc-15987h0-0",
+      "target": "div",
+      "toString": [Function],
+      "usesTheme": false,
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+    }
+  }
+  forwardedRef={null}
+  sizes={
+    Array [
+      true,
+      true,
+      false,
+      false,
+      false,
+    ]
+  }
+>
+  Some text
+</StyledComponent>
+`;
