@@ -18,7 +18,9 @@
     "enzyme-to-json": "^3.5.0",
     "husky": "^4.2.5",
     "prettier": "^2.0.5",
-    "pretty-quick": "^2.0.1"
+    "pretty-quick": "^2.0.1",
+    "puppeteer": "^5.2.0",
+    "react-screenshot-test": "^2.1.0"
   },
   "scripts": {
     "format": "pretty-quick --staged",
@@ -27,7 +29,9 @@
     "storybook:build": "build-storybook -c .storybook -o storybook-build",
     "build": "react-scripts build",
     "test:watch": "react-scripts test",
-    "test": "CI=true react-scripts test --env=jsdom"
+    "test": "CI=true react-scripts test --env=jsdom",
+    "test:screenshot": "SCREENSHOT_MODE=local jest -c jest.screenshot.config.js",
+    "test:screenshot:update": "SCREENSHOT_MODE=local jest -c jest.screenshot.config.js -u"
   },
   "babelMacros": {
     "styledComponents": {}
@@ -46,7 +50,8 @@
     ],
     "collectCoverageFrom": [
       "src/**/*.js",
-      "!src/index.js"
+      "!src/index.js",
+      "!**/node_modules/**"
     ],
     "coverageReporters": [
       "text"
