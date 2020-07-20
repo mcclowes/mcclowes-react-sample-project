@@ -2,17 +2,33 @@
 
 exports[`renders component 1`] = `
 <csx__PageWrapper>
-  <csx__Page>
-    <SmartContainer>
-      <Text>
-        Hello World!
-      </Text>
-    </SmartContainer>
-    <Dumb>
-      <Text>
-        This is an example project. Make changes as you see fit.
-      </Text>
-    </Dumb>
-  </csx__Page>
+  <e
+    delay={[Function]}
+    opacity={
+      Array [
+        0,
+        1,
+      ]
+    }
+    translateY={
+      Array [
+        "-4em",
+        0,
+      ]
+    }
+  >
+    <csx__Page>
+      <SmartContainer>
+        <Text>
+          Hello World!
+        </Text>
+      </SmartContainer>
+      <Dumb>
+        <Text>
+          This is an example project. Make changes as you see fit.
+        </Text>
+      </Dumb>
+    </csx__Page>
+  </e>
 </csx__PageWrapper>
 `;
