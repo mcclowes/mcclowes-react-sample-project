@@ -1,6 +1,7 @@
 # mcclowes-react-sample-project
 
 [![CircleCI](https://circleci.com/gh/mcclowes/mcclowes-react-sample-project.svg?style=svg)](https://circleci.com/gh/mcclowes/mcclowes-react-sample-project)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fmcclowes%2Fmcclowes-react-sample-project.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fmcclowes%2Fmcclowes-react-sample-project?ref=badge_shield)
 
 This project includes:
 
@@ -49,3 +50,7 @@ These UIKit components can be viewed by running:
 ## Contributing
 
 If you'd like to contribute, please fork the repository and use a feature branch. Pull requests are welcome!
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fmcclowes%2Fmcclowes-react-sample-project.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fmcclowes%2Fmcclowes-react-sample-project?ref=badge_large)
