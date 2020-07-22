@@ -1,4 +1,4 @@
-import Smart from "../Smart";
+import Page from "../Page";
 import React from "react";
 import { shallow } from "enzyme";
 
@@ -10,13 +10,13 @@ const renderComponent = (newProps) => {
     ...newProps,
   };
 
-  return shallow(<Smart {...props} />);
+  return shallow(<Page {...props} />);
 };
 
 let wrapper;
 
-describe("Smart", () => {
-  it("renders default component", () => {
+describe("Page", () => {
+  it("renders component", () => {
     wrapper = renderComponent();
 
     expect(wrapper).toMatchSnapshot();

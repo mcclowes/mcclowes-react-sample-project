@@ -2,12 +2,12 @@ import Dumb from "../Dumb";
 import React from "react";
 import { shallow } from "enzyme";
 
-const defaultProps = {};
+const DEFAULT_PROPS = {};
 
-const renderComponent = newProps => {
+const renderComponent = (newProps) => {
   const props = {
-    ...defaultProps,
-    ...newProps
+    ...DEFAULT_PROPS,
+    ...newProps,
   };
 
   return shallow(<Dumb {...props} />);

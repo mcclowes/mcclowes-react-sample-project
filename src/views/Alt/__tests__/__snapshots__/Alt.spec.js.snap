@@ -1,16 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders component 1`] = `
-<csx__PageWrapper>
-  <csx__Page>
-    <Text>
-      Made by 
-      <a
-        href="https://github.com/mcclowes"
-      >
-        @mcclowes
-      </a>
-    </Text>
-  </csx__Page>
-</csx__PageWrapper>
+<Page>
+  <Text>
+    Made by 
+    <a
+      href="https://github.com/mcclowes"
+    >
+      @mcclowes
+    </a>
+  </Text>
+</Page>
 `;

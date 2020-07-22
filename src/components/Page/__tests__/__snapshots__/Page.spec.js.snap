@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Page renders component 1`] = `
+<csx__PageWrapper>
+  <e
+    delay={[Function]}
+    opacity={
+      Array [
+        0,
+        1,
+      ]
+    }
+    translateY={
+      Array [
+        "-4em",
+        0,
+      ]
+    }
+  >
+    <csx__PageContainer />
+  </e>
+</csx__PageWrapper>
+`;
