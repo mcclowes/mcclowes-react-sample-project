@@ -15,7 +15,7 @@
   "devDependencies": {
     "@storybook/react": "^6.0.21",
     "enzyme": "^3.11.0",
-    "enzyme-adapter-react-16": "^1.15.2",
+    "enzyme-adapter-react-16": "^1.15.4",
     "enzyme-to-json": "^3.5.0",
     "husky": "^4.2.5",
     "prettier": "^2.0.5",
