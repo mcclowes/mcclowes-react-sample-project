@@ -32,7 +32,8 @@
     "test:watch": "react-scripts test",
     "test": "CI=true react-scripts test --env=jsdom",
     "test:screenshot": "SCREENSHOT_MODE=local jest -c jest.screenshot.config.js",
-    "test:screenshot:update": "SCREENSHOT_MODE=local jest -c jest.screenshot.config.js -u"
+    "test:screenshot:update": "SCREENSHOT_MODE=local jest -c jest.screenshot.config.js -u",
+    "test:screenshot-ci": "jest -c jest.screenshot.config.js"
   },
   "babelMacros": {
     "styledComponents": {}
