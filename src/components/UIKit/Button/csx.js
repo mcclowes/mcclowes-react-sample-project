@@ -1,15 +1,15 @@
 import styled from "styled-components/macro";
 
 export const ButtonWrapper = styled.button`
-  border-radius: ${(props) => props.theme.sizes.border.radius};
-  cursor: pointer;
-  font-size: 14px;
-  padding: 0.5em 1em;
-  display: flex;
-  justify-items: center;
   align-items: center;
+  border-radius: ${(props) => props.theme.sizes.border.radius};
   border: 2px solid ${(props) => props.theme.colors.primary};
+  cursor: pointer;
+  display: flex;
   font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  justify-items: center;
+  padding: 0.5em 1em;
 
   ${(props) =>
     props.subtle

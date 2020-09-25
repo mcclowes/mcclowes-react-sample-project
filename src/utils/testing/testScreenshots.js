@@ -19,17 +19,28 @@ const deviceConfig = {
 };
 
 export const TestScreenshots = (props) => {
-  const { name, components, desktopOverrides, mobileOverrides } = props;
+  const {
+    name,
+    components,
+    desktopOverrides = {},
+    mobileOverrides = {},
+  } = props;
 
-  const testSetup = ReactScreenshotTest.create(name)
-    .viewport("Desktop", {
+  const testSetup = ReactScreenshotTest.create(name);
+
+  if (desktopOverrides && !desktopOverrides.disabled) {
+    testSetup.viewport("Desktop", {
       ...deviceConfig.desktop,
       ...desktopOverrides,
-    })
-    .viewport("Mobile", {
+    });
+  }
+
+  if (desktopOverrides && !mobileOverrides.disabled) {
+    testSetup.viewport("Mobile", {
       ...deviceConfig.mobile,
       ...mobileOverrides,
     });
+  }
 
   components.forEach((component) => {
     testSetup.shoot(

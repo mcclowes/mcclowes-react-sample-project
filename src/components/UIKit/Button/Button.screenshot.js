@@ -6,6 +6,7 @@ import { TestScreenshots } from "../../../utils/testing/testScreenshots";
 
 TestScreenshots({
   name: "Button",
+  desktopOverrides: { disabled: true },
   components: [
     {
       name: "default",
