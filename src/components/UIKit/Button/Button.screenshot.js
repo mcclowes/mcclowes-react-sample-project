@@ -1,4 +1,4 @@
-import Button from "./Index";
+import Button from "./index";
 import Icon from "../Icon";
 import React from "react";
 

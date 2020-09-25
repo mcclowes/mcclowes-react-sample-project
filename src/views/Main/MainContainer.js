@@ -1,6 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
 import Main from "./Main";
-import { Loader } from "../../components/UIKit";
 
 const MainContainer = (props) => {
   return <Main {...props} />;
