@@ -8,6 +8,8 @@
 version: 2.1
 anchors:
   defaults: &defaults
+    macos:
+      xcode: 11.3.0
     docker:
       - image: circleci/node:11-browsers
     working_directory: ~/repo
