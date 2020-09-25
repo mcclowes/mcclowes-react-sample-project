@@ -9,7 +9,7 @@ export const ButtonWrapper = styled.button`
   justify-items: center;
   align-items: center;
   border: 2px solid ${(props) => props.theme.colors.primary};
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: "Open Sans", sans-serif;
 
   ${(props) =>
     props.subtle
