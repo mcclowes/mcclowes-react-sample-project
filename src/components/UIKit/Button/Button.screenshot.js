@@ -1,5 +1,5 @@
-import Button from "../Button";
-import Icon from "../../Icon";
+import Button from "./Index";
+import Icon from "../Icon";
 import React from "react";
 
 import { TestScreenshots } from "../../../utils/testing/testScreenshots";
