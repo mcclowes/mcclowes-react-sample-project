@@ -34,7 +34,7 @@ const DesktopWrapper = styled(Breakpoint)`
 
   ${LinkWrapper},
   ${LogoWrapper} {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Cantarell", sans-serif;
     text-decoration: none;
     color: white;
 

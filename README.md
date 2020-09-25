@@ -17,7 +17,11 @@ Try it here: https://mcclowes-react-sample-project.now.sh/
 
 ## Setting up the project
 
-Install dependencies
+Install dependencies & check they work:
+
+`brew install git-lfs circleci && circleci config validate`
+
+Install NPM dependencies:
 
 `npm install`
 
@@ -51,6 +55,6 @@ These UIKit components can be viewed by running:
 
 If you'd like to contribute, please fork the repository and use a feature branch. Pull requests are welcome!
 
-
 ## License
+
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fmcclowes%2Fmcclowes-react-sample-project.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fmcclowes%2Fmcclowes-react-sample-project?ref=badge_large)

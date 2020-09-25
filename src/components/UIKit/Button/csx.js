@@ -6,7 +6,7 @@ export const ButtonWrapper = styled.button`
   border: 2px solid ${(props) => props.theme.colors.primary};
   cursor: pointer;
   display: flex;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Cantarell", sans-serif;
   font-size: 14px;
   justify-items: center;
   padding: 0.5em 1em;

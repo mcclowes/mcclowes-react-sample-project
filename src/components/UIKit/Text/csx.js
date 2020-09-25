@@ -3,7 +3,7 @@ import styled from "styled-components/macro";
 export const Header = styled.h1`
   color: ${(props) => props.theme.colors.black};
   font-size: 1.2em;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Cantarell", sans-serif;
 `;
 
 Header.defaultProps = {
@@ -16,7 +16,7 @@ Header.defaultProps = {
 
 export const Paragraph = styled.p`
   color: ${(props) => props.theme.colors.black};
-  font-family: "Montserrat", sans-serif;
+  font-family: "Cantarell", sans-serif;
 `;
 
 Paragraph.defaultProps = {
@@ -31,7 +31,7 @@ export const Meta = styled.p`
   margin: 0;
   font-size: 0.8em;
   color: ${(props) => props.theme.colors.gray};
-  font-family: "Montserrat", sans-serif;
+  font-family: "Cantarell", sans-serif;
 `;
 
 Meta.defaultProps = {
