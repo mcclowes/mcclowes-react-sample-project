@@ -8,8 +8,6 @@
 version: 2.1
 anchors:
   defaults: &defaults
-    macos:
-      xcode: 11.3.0
     docker:
       - image: circleci/node:11-browsers
     working_directory: ~/repo
@@ -54,6 +52,10 @@ jobs:
     <<: *defaults
     steps:
       - checkout
+      - run:
+          name: Install Linuxbrew
+          command: |
+            - ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install)"  </dev/null && PATH="$HOME/.linuxbrew/bin:$PATH"
       - run:
           name: Set up Git LFS
           command: |
