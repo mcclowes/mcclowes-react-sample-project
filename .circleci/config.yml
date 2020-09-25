@@ -2,36 +2,80 @@
 #
 # Check https://circleci.com/docs/2.0/language-javascript/ for more details
 #
-version: 2
+
+# @todo: add linting
+
+version: 2.1
+anchors:
+  defaults: &defaults
+    docker:
+      - image: circleci/node:11-browsers
+    working_directory: ~/repo
+  restore_cache: &restore_cache # Download and cache dependencies
+    restore_cache:
+      keys:
+        - v1-dependencies-{{ checksum "package.json" }}
+        - v1-dependencies- # fallback to using the latest cache if no exact match is found
+  save_cache: &save_cache
+    save_cache:
+      paths:
+        - node_modules
+      key: v1-dependencies-{{ checksum "package.json" }}
 jobs:
   build:
-    docker:
-      # specify the version you desire here
-      - image: circleci/node:13.7.0
-
-      # Specify service dependencies here if necessary
-      # CircleCI maintains a library of pre-built images
-      # documented at https://circleci.com/docs/2.0/circleci-images/
-      # - image: circleci/mongo:3.4.4
-
-    working_directory: ~/repo
-
+    <<: *defaults
     steps:
       - checkout
-
-      # Download and cache dependencies
-      - restore_cache:
-          keys:
-            - v1-dependencies-{{ checksum "package.json" }}
-            # fallback to using the latest cache if no exact match is found
-            - v1-dependencies-
-
+      - *restore_cache
       - run: npm install
-
-      - save_cache:
-          paths:
-            - node_modules
-          key: v1-dependencies-{{ checksum "package.json" }}
-
-      # run tests!
-      - run: npm run test
+      - *save_cache
+      - run: npm run build
+  lint:
+    <<: *defaults
+    steps:
+      - checkout
+      - *restore_cache
+      - run: npm install
+      - *save_cache
+      - run: npm run format
+  test-unit:
+    <<: *defaults
+    steps:
+      - checkout
+      - *restore_cache
+      - run: npm install
+      - *save_cache
+      - run:
+          name: Unit tests
+          command: npm run test
+  test-screenshot:
+    <<: *defaults
+    steps:
+      - checkout
+      - run:
+          name: Set up Git LFS
+          command: |
+            sudo apt-get install -y git-lfs
+            git lfs install
+            git lfs pull
+      - run:
+          name: Install fonts
+          command: |
+            sudo apt-get install -y fonts-open-sans
+      - *restore_cache
+      - run: npm install
+      - *save_cache
+      - run:
+          name: Screenshot tests
+          command: npm run test:screenshot-ci
+      - store_artifacts:
+          path: src/utils/testing/__screenshots__
+          destination: snapshots
+workflows:
+  check:
+    jobs:
+      - build
+      - lint
+      - test-unit
+      - test-screenshot
+      # - docker-image

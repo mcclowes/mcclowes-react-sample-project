@@ -6,10 +6,10 @@ import {
   DropdownWrapper,
   DropdownPlaceholder,
   DropdownOptions,
-  DropdownOption
+  DropdownOption,
 } from "./csx";
 
-const Dropdown = props => {
+const Dropdown = (props) => {
   const { placeholder, options, open, setOpen, value, handleClick } = props;
 
   return (
@@ -45,7 +45,7 @@ Dropdown.propTypes = {
   options: PropTypes.array,
   placeholder: PropTypes.string,
   setOpen: PropTypes.func,
-  value: PropTypes.any
+  value: PropTypes.any,
 };
 
 export default Dropdown;

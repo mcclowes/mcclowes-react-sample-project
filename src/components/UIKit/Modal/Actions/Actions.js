@@ -4,7 +4,7 @@ import { ActionsWrapper } from "./csx";
 import Padded from "../../Padded";
 import Button from "../../Button";
 
-const Actions = props => {
+const Actions = (props) => {
   const { children, actions } = props;
 
   return (
@@ -12,7 +12,7 @@ const Actions = props => {
       {children}
 
       {actions &&
-        actions.map(action => {
+        actions.map((action) => {
           return (
             <Padded space="p3">
               <Button
@@ -32,8 +32,8 @@ Actions.propTypes = {
   actions: PropTypes.shape({
     doClick: PropTypes.func,
     text: PropTypes.string,
-    to: PropTypes.string
-  })
+    to: PropTypes.string,
+  }),
 };
 
 export default Actions;

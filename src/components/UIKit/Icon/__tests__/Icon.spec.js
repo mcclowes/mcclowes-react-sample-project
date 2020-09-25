@@ -4,13 +4,13 @@ import icons from "../icons";
 import { shallow } from "enzyme";
 
 const defaultProps = {
-  path: icons.TICK
+  path: icons.TICK,
 };
 
-const renderComponent = newProps => {
+const renderComponent = (newProps) => {
   const props = {
     ...defaultProps,
-    ...newProps
+    ...newProps,
   };
 
   return shallow(<Icon {...props} />);

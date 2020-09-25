@@ -2,13 +2,13 @@ import Dropdown from "./Dropdown";
 import PropTypes from "prop-types";
 import React, { useState } from "react";
 
-const DropdownContainer = props => {
+const DropdownContainer = (props) => {
   const [open, setOpen] = useState(false);
   const [value, setValue] = useState(undefined);
 
   const { callback } = props;
 
-  const handleClick = value => {
+  const handleClick = (value) => {
     setValue(value);
     if (callback) {
       callback(value);
@@ -27,7 +27,7 @@ const DropdownContainer = props => {
 };
 
 DropdownContainer.propTypes = {
-  callback: PropTypes.func
+  callback: PropTypes.func,
 };
 
 export default DropdownContainer;

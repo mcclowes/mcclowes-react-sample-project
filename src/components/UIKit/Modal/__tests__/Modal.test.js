@@ -7,7 +7,7 @@ const ContentMock = () => {
   return <div>This is in a portal</div>;
 };
 
-const ModalWrapper = props => {
+const ModalWrapper = (props) => {
   const [open, setOpen] = useState(false);
 
   return (
@@ -34,21 +34,11 @@ describe("Modal", () => {
   it("interaction", () => {
     const wrapper = mountComponent();
 
-    expect(
-      wrapper
-        .find("Modal")
-        .at(0)
-        .prop("isOpen")
-    ).toBe(false);
+    expect(wrapper.find("Modal").at(0).prop("isOpen")).toBe(false);
 
     wrapper.find("button").simulate("click");
 
-    expect(
-      wrapper
-        .find("Modal")
-        .at(0)
-        .prop("isOpen")
-    ).toBe(true);
+    expect(wrapper.find("Modal").at(0).prop("isOpen")).toBe(true);
 
     expect(wrapper).toMatchSnapshot();
   });

@@ -51,7 +51,7 @@ const BottomBar = styled(Bar)`
           (props.layerSpacing + props.layerHeight) * -1
         }px, 0) rotate(-45deg);`
       : ""} transition-duration: ${(props) =>
-  0.15 * 2 * props.transitionDuration}s;
+    0.15 * 2 * props.transitionDuration}s;
   transition-delay: ${(props) =>
     props.open
       ? 0.32 * 2 * props.transitionDuration

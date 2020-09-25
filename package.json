@@ -24,7 +24,9 @@
     "react-screenshot-test": "^2.1.1"
   },
   "scripts": {
-    "format": "pretty-quick --staged",
+    "circleci:validate": "circleci config validate",
+    "format": "prettier --write src/",
+    "format:staged": "pretty-quick --staged",
     "start": "react-scripts start",
     "storybook": "start-storybook",
     "storybook:build": "build-storybook -c .storybook -o storybook-build",
@@ -32,14 +34,15 @@
     "test:watch": "react-scripts test",
     "test": "CI=true react-scripts test --env=jsdom",
     "test:screenshot": "SCREENSHOT_MODE=local jest -c jest.screenshot.config.js",
-    "test:screenshot:update": "SCREENSHOT_MODE=local jest -c jest.screenshot.config.js -u"
+    "test:screenshot:update": "SCREENSHOT_MODE=local jest -c jest.screenshot.config.js -u",
+    "test:screenshot-ci": "jest -c jest.screenshot.config.js"
   },
   "babelMacros": {
     "styledComponents": {}
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run format && npm run test"
+      "pre-commit": "npm run format:staged && npm run test"
     }
   },
   "eslintConfig": {

@@ -1,11 +1,11 @@
 import styled from "styled-components/macro";
-import { styles } from "../../../utils";
+import { styles } from "../../../../utils";
 
 export const ActionsWrapper = styled.div`
   display: flex;
   justify-content: flex-end;
   padding: 0.5em;
-  border-top: 1px solid ${props => props.theme.colors.lightgray};
+  border-top: 1px solid ${(props) => props.theme.colors.lightgray};
 
   ${styles.breakpoints.breakpoint(
     "small",
@@ -30,7 +30,7 @@ export const ActionsWrapper = styled.div`
 ActionsWrapper.defaultProps = {
   theme: {
     colors: {
-      lightgray: "#eeeeee"
-    }
-  }
+      lightgray: "#eeeeee",
+    },
+  },
 };

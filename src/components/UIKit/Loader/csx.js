@@ -4,10 +4,10 @@ const LoaderWrapper = styled.div`
   -webkit-animation: spin 2s linear infinite; /* Safari */
   animation: spin 2s linear infinite;
   border-radius: 50%;
-  border: 2px solid ${props => props.theme.colors.lightgray};
-  border-top: 2px solid ${props => props.theme.colors.primary};
-  height: ${props => (props.height ? props.height : "16px")};
-  width: ${props => (props.width ? props.width : "16px")};
+  border: 2px solid ${(props) => props.theme.colors.lightgray};
+  border-top: 2px solid ${(props) => props.theme.colors.primary};
+  height: ${(props) => (props.height ? props.height : "16px")};
+  width: ${(props) => (props.width ? props.width : "16px")};
 
   /* Safari */
   @-webkit-keyframes spin {
@@ -35,7 +35,7 @@ LoaderWrapper.defaultProps = {
   theme: {
     colors: {
       primary: "#DD3437",
-      lightgray: "#eeeeee"
-    }
-  }
+      lightgray: "#eeeeee",
+    },
+  },
 };

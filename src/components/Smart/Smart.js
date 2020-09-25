@@ -2,7 +2,7 @@ import React from "react";
 import { SmartWrapper, SmartContent } from "./csx";
 import { Button, Text, Padded } from "../UIKit";
 
-const Smart = props => {
+const Smart = (props) => {
   const { children, active, setActive } = props;
 
   return (

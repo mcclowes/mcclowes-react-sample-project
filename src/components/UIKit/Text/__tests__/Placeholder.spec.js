@@ -7,7 +7,7 @@ const defaultProps = {};
 const renderComponent = (newProps, textType = "Paragraph") => {
   const props = {
     ...defaultProps,
-    ...newProps
+    ...newProps,
   };
 
   const Component = Text[textType];

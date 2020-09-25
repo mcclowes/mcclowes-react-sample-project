@@ -1,6 +1,8 @@
-import React from "react";
+import GlobalStyle from "../styles/GlobalStyle";
 import PropTypes from "prop-types";
+import React from "react";
 import { ReactScreenshotTest } from "react-screenshot-test";
+import { ThemeProvider } from "styled-components/macro";
 
 const deviceConfig = {
   desktop: {
@@ -17,20 +19,38 @@ const deviceConfig = {
 };
 
 export const TestScreenshots = (props) => {
-  const { name, components, desktopOverrides, mobileOverrides } = props;
+  const {
+    name,
+    components,
+    desktopOverrides = {},
+    mobileOverrides = {},
+  } = props;
 
-  const testSetup = ReactScreenshotTest.create(name)
-    .viewport("Desktop", {
+  const testSetup = ReactScreenshotTest.create(name);
+
+  if (desktopOverrides && !desktopOverrides.disabled) {
+    testSetup.viewport("Desktop", {
       ...deviceConfig.desktop,
       ...desktopOverrides,
-    })
-    .viewport("Mobile", {
+    });
+  }
+
+  if (desktopOverrides && !mobileOverrides.disabled) {
+    testSetup.viewport("Mobile", {
       ...deviceConfig.mobile,
       ...mobileOverrides,
     });
+  }
 
   components.forEach((component) => {
-    testSetup.shoot(component.name, <div>{component.component}</div>);
+    testSetup.shoot(
+      component.name,
+      <div>
+        <GlobalStyle />
+
+        {component.component}
+      </div>
+    );
   });
 
   testSetup.run();

@@ -16,7 +16,7 @@ export const withCallback = () => {
     <Dropdown
       placeholder="Select..."
       options={[1, 2, 3, 4, 5]}
-      callback={value => alert("You clicked " + value)}
+      callback={(value) => alert("You clicked " + value)}
     />
   );
 };

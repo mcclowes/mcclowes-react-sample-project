@@ -1,16 +1,17 @@
 import styled from "styled-components/macro";
 
 export const ButtonWrapper = styled.button`
-  border-radius: ${props => props.theme.sizes.border.radius};
-  cursor: pointer;
-  font-size: 14px;
-  padding: 0.5em 1em;
-  display: flex;
-  justify-items: center;
   align-items: center;
-  border: 2px solid ${props => props.theme.colors.primary};
+  border-radius: ${(props) => props.theme.sizes.border.radius};
+  border: 2px solid ${(props) => props.theme.colors.primary};
+  cursor: pointer;
+  display: flex;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  justify-items: center;
+  padding: 0.5em 1em;
 
-  ${props =>
+  ${(props) =>
     props.subtle
       ? `
       background: ${props.theme.colors.white};
@@ -31,16 +32,16 @@ export const ButtonWrapper = styled.button`
 
   &:focus {
     outline: none;
-    border: 2px solid ${props => props.theme.colors.alt};
+    border: 2px solid ${(props) => props.theme.colors.alt};
   }
 
-  ${props => (props.fill ? "width: 100%;" : "")};
+  ${(props) => (props.fill ? "width: 100%;" : "")};
 
-  ${props => (props.large ? `padding: 0.75em 1.5em;` : "")};
+  ${(props) => (props.large ? `padding: 0.75em 1.5em;` : "")};
 
   svg {
     margin-right: 0.5em;
-    fill: ${props => props.theme.colors.white};
+    fill: ${(props) => props.theme.colors.white};
   }
 `;
 
@@ -49,13 +50,13 @@ ButtonWrapper.defaultProps = {
     colors: {
       primary: "#aaaaaa",
       alt: "#888888",
-      white: "#ffffff"
+      white: "#ffffff",
     },
     sizes: {
       border: {
-        radius: "3px"
-      }
-    }
+        radius: "3px",
+      },
+    },
   },
-  subtle: false
+  subtle: false,
 };

@@ -1,5 +1,5 @@
 import styled from "styled-components/macro";
-import { styles } from "../../utils";
+import { styles } from "../../../utils";
 
 const breakpointSizes = ["xSmall", "small", "medium", "large", "xLarge"];
 

@@ -34,7 +34,7 @@ const DesktopWrapper = styled(Breakpoint)`
 
   ${LinkWrapper},
   ${LogoWrapper} {
-    font-family: Helventica, Arial, sans-serif;
+    font-family: "Open Sans", sans-serif;
     text-decoration: none;
     color: white;
 

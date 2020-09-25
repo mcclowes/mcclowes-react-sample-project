@@ -1,43 +1,43 @@
 import styled from "styled-components/macro";
 
 export const Header = styled.h1`
-  color: ${props => props.theme.colors.black};
+  color: ${(props) => props.theme.colors.black};
   font-size: 1.2em;
-  font-family: Helventica, Arial, sans-serif;
+  font-family: "Open Sans", sans-serif;
 `;
 
 Header.defaultProps = {
   theme: {
     colors: {
-      black: "#333333"
-    }
-  }
+      black: "#333333",
+    },
+  },
 };
 
 export const Paragraph = styled.p`
-  color: ${props => props.theme.colors.black};
-  font-family: Helventica, Arial, sans-serif;
+  color: ${(props) => props.theme.colors.black};
+  font-family: "Open Sans", sans-serif;
 `;
 
 Paragraph.defaultProps = {
   theme: {
     colors: {
-      black: "#333333"
-    }
-  }
+      black: "#333333",
+    },
+  },
 };
 
 export const Meta = styled.p`
   margin: 0;
   font-size: 0.8em;
-  color: ${props => props.theme.colors.gray};
-  font-family: Helventica, Arial, sans-serif;
+  color: ${(props) => props.theme.colors.gray};
+  font-family: "Open Sans", sans-serif;
 `;
 
 Meta.defaultProps = {
   theme: {
     colors: {
-      gray: "#aaaaaa"
-    }
-  }
+      gray: "#aaaaaa",
+    },
+  },
 };
