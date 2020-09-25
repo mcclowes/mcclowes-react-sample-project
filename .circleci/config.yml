@@ -58,6 +58,10 @@ jobs:
             sudo apt-get install -y git-lfs
             git lfs install
             git lfs pull
+      - run:
+          name: Install fonts
+          command: |
+            sudo apt-get install fonts-open-sans
       - *restore_cache
       - run: npm install
       - *save_cache
