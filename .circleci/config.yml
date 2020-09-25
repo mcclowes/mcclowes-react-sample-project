@@ -55,7 +55,10 @@ jobs:
       - run:
           name: Install Linuxbrew
           command: |
-            - ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install)"  </dev/null && PATH="$HOME/.linuxbrew/bin:$PATH"
+            test -d ~/.linuxbrew && eval $(~/.linuxbrew/bin/brew shellenv)
+            test -d /home/linuxbrew/.linuxbrew && eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
+            test -r ~/.bash_profile && echo "eval \$($(brew --prefix)/bin/brew shellenv)" >>~/.bash_profile
+            echo "eval \$($(brew --prefix)/bin/brew shellenv)" >>~/.profile
       - run:
           name: Set up Git LFS
           command: |
@@ -65,6 +68,7 @@ jobs:
       - run:
           name: Install fonts
           command: |
+            brew tap homebrew/cask-fonts
             brew cask install -y font-open-sans \
                                   font-montserrat
       - *restore_cache
