@@ -14,30 +14,30 @@ jobs:
     steps:
       - checkout
       - run:
-        name: Set up Git LFS
-        command: |
-          sudo apt-get install -y git-lfs
-          git lfs install
-          git lfs pull
+          name: Set up Git LFS
+          command: |
+            sudo apt-get install -y git-lfs
+            git lfs install
+            git lfs pull
       - restore_cache: # Download and cache dependencies
-        keys:
-          - v1-dependencies-{{ checksum "package.json" }}
-          # fallback to using the latest cache if no exact match is found
-          - v1-dependencies-
+          keys:
+            - v1-dependencies-{{ checksum "package.json" }}
+            # fallback to using the latest cache if no exact match is found
+            - v1-dependencies-
       - run:
-        name: Install dependencies
-        command: npm install
+          name: Install dependencies
+          command: npm install
       - save_cache:
-        paths:
-          - node_modules
-        key: v1-dependencies-{{ checksum "package.json" }}
+          paths:
+            - node_modules
+          key: v1-dependencies-{{ checksum "package.json" }}
       # run tests!
       - run:
-        name: Unit tests
-        command: npm run test
+          name: Unit tests
+          command: npm run test
       - run:
-        name: Screenshot tests
-        command: npm run test:screenshot
+          name: Screenshot tests
+          command: npm run test:screenshot
       - store_artifacts:
-        path: src/utils/testing/__screenshots__
-        destination: snapshots
+          path: src/utils/testing/__screenshots__
+          destination: snapshots

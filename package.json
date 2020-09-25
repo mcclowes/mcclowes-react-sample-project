@@ -24,6 +24,7 @@
     "react-screenshot-test": "^2.1.1"
   },
   "scripts": {
+    "circleci:validate": "circleci config validate",
     "format": "pretty-quick --staged",
     "start": "react-scripts start",
     "storybook": "start-storybook",
