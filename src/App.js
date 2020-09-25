@@ -1,4 +1,4 @@
-import GlobalStyle from "./GlobalStyle";
+import GlobalStyle from "./utils/styles/GlobalStyle";
 import Helmet from "react-helmet";
 import React from "react";
 import Routes from "./routing/Routes";

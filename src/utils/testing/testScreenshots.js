@@ -1,6 +1,8 @@
-import React from "react";
+import GlobalStyle from "../styles/GlobalStyle";
 import PropTypes from "prop-types";
+import React from "react";
 import { ReactScreenshotTest } from "react-screenshot-test";
+import { ThemeProvider } from "styled-components/macro";
 
 const deviceConfig = {
   desktop: {
@@ -30,7 +32,14 @@ export const TestScreenshots = (props) => {
     });
 
   components.forEach((component) => {
-    testSetup.shoot(component.name, <div>{component.component}</div>);
+    testSetup.shoot(
+      component.name,
+      <div>
+        <GlobalStyle />
+
+        {component.component}
+      </div>
+    );
   });
 
   testSetup.run();
