@@ -5,13 +5,13 @@ import Loader from "../Loader";
 
 describe("Loader", () => {
   const defaultProps = {
-    placeholders: 2
+    placeholders: 2,
   };
 
-  const renderComponent = newProps => {
+  const renderComponent = (newProps) => {
     const props = {
       ...defaultProps,
-      ...newProps
+      ...newProps,
     };
     return shallow(<Loader {...props} />);
   };

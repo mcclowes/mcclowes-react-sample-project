@@ -14,7 +14,7 @@ export const withPath = () => {
 export const all = () => {
   return (
     <>
-      {Object.values(icons).map(icon => (
+      {Object.values(icons).map((icon) => (
         <Icon path={icon} />
       ))}
     </>

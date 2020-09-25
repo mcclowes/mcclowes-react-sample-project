@@ -11,27 +11,27 @@ export const InnerWrapper = styled.div`
   width: 680px;
   overflow: auto;
 
-  ${props =>
+  ${(props) =>
     props["data-modal-size"] === "mini" &&
     `
     min-width: 318px;
     max-width: 318px;
   `};
 
-  ${props =>
+  ${(props) =>
     props["data-modal-size"] === "tiny" &&
     `
     max-width: 500px;
     min-width: 500px;
   `};
 
-  ${props =>
+  ${(props) =>
     props["data-modal-size"] === "small" &&
     `
     max-width: 680px;
   `};
 
-  ${props =>
+  ${(props) =>
     props["data-modal-size"] === "medium" &&
     `
     max-width: 920px;

@@ -25,7 +25,8 @@
   },
   "scripts": {
     "circleci:validate": "circleci config validate",
-    "format": "pretty-quick --staged",
+    "format": "prettier --write src/",
+    "format:staged": "pretty-quick --staged",
     "start": "react-scripts start",
     "storybook": "start-storybook",
     "storybook:build": "build-storybook -c .storybook -o storybook-build",
@@ -41,7 +42,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run format && npm run test"
+      "pre-commit": "npm run format:staged && npm run test"
     }
   },
   "eslintConfig": {

@@ -15,7 +15,7 @@ export const CloseWrapper = styled.div`
 
 export const CloseButton = styled.button`
   align-items: center;
-  border-radius: ${props => props.theme.sizes.border.radius};
+  border-radius: ${(props) => props.theme.sizes.border.radius};
   border: none;
   cursor: pointer;
   display: flex;
@@ -32,8 +32,8 @@ CloseButton.defaultProps = {
   theme: {
     sizes: {
       border: {
-        radius: "3px"
-      }
-    }
-  }
+        radius: "3px",
+      },
+    },
+  },
 };

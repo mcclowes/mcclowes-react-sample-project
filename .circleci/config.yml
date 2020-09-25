@@ -30,6 +30,14 @@ jobs:
       - run: npm install
       - *save_cache
       - run: npm run build
+  lint:
+    <<: *defaults
+    steps:
+      - checkout
+      - *restore_cache
+      - run: npm install
+      - *save_cache
+      - run: npm run format
   test-unit:
     <<: *defaults
     steps:
@@ -63,7 +71,7 @@ workflows:
   check:
     jobs:
       - build
-      # - lint
+      - lint
       - test-unit
       - test-screenshot
       # - docker-image

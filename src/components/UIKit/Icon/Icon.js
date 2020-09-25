@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import React from "react";
 import { IconWrapper } from "./csx";
 
-const Icon = props => {
+const Icon = (props) => {
   const { path, width, height, icon } = props;
 
   return (
@@ -22,7 +22,7 @@ Icon.propTypes = {
   height: PropTypes.any,
   icon: PropTypes.string,
   path: PropTypes.string,
-  width: PropTypes.any
+  width: PropTypes.any,
 };
 
 export default Icon;

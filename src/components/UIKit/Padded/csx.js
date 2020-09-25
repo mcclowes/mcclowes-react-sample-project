@@ -6,10 +6,10 @@ const spaces = {
   2: "0.25em",
   3: "0.5em",
   4: "0.75em",
-  5: "1em"
+  5: "1em",
 };
 
-const getDirection = direction => {
+const getDirection = (direction) => {
   if (direction === "t") return "-top";
   if (direction === "b") return "-bottom";
   if (direction === "l") return "-left";
@@ -17,7 +17,7 @@ const getDirection = direction => {
   return "";
 };
 
-const getSpacing = space => {
+const getSpacing = (space) => {
   const [padding, amount] = space.match(/[a-z]+|[^a-z]+/gi);
 
   const spaceType = padding.split("")[0] === "p" ? "padding" : "margin";
@@ -27,5 +27,5 @@ const getSpacing = space => {
 };
 
 export const PaddedWrapper = styled.div`
-  ${props => props.space && getSpacing(props.space)};
+  ${(props) => props.space && getSpacing(props.space)};
 `;

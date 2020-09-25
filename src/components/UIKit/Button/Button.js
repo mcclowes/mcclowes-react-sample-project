@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import React from "react";
 import { ButtonWrapper } from "./csx";
 
-const Button = props => {
+const Button = (props) => {
   const { children, text, to = "/", doClick, subtle } = props;
 
   return (
@@ -17,7 +17,7 @@ Button.propTypes = {
   children: PropTypes.any,
   doClick: PropTypes.func,
   text: PropTypes.string,
-  to: PropTypes.string
+  to: PropTypes.string,
 };
 
 export default Button;

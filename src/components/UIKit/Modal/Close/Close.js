@@ -2,7 +2,7 @@ import React from "react";
 import Icon from "../../Icon";
 import { CloseWrapper, CloseButton } from "./csx";
 
-const Close = props => {
+const Close = (props) => {
   const { icon, onClick } = props;
 
   return (

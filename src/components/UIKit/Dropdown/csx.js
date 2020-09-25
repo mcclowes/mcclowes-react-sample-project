@@ -7,20 +7,20 @@ export const DropdownPlaceholder = styled.div`
   flex-direction: row;
   align-items: center;
 
-  ${props =>
+  ${(props) =>
     props.value === undefined ? `color: ${props.theme.colors.gray};` : ""};
 `;
 
 DropdownPlaceholder.defaultProps = {
   theme: {
     colors: {
-      gray: "#aaaaaa"
-    }
-  }
+      gray: "#aaaaaa",
+    },
+  },
 };
 
 export const DropdownOptions = styled.div`
-  ${props =>
+  ${(props) =>
     props.open
       ? `border-top: 1px solid ${props.theme.colors.gray};`
       : "display:none;"};
@@ -29,23 +29,23 @@ export const DropdownOptions = styled.div`
 DropdownOptions.defaultProps = {
   theme: {
     colors: {
-      gray: "#aaaaaa"
-    }
-  }
+      gray: "#aaaaaa",
+    },
+  },
 };
 
 export const DropdownOption = styled.div``;
 
 export const DropdownWrapper = styled.div`
-  border: 1px solid ${props => props.theme.colors.gray};
-  border-radius: ${props => props.theme.sizes.border.radius};
+  border: 1px solid ${(props) => props.theme.colors.gray};
+  border-radius: ${(props) => props.theme.sizes.border.radius};
   cursor: pointer;
-  background: ${props => props.theme.colors.white};
+  background: ${(props) => props.theme.colors.white};
 
   ${DropdownPlaceholder} {
     svg {
-      fill: ${props => props.theme.colors.gray};
-      transform: ${props => (props.open ? "rotate(180deg);" : "")};
+      fill: ${(props) => props.theme.colors.gray};
+      transform: ${(props) => (props.open ? "rotate(180deg);" : "")};
     }
   }
 
@@ -53,11 +53,11 @@ export const DropdownWrapper = styled.div`
     padding: 0.25em 0.5em;
 
     &:hover {
-      background-color: ${props => props.theme.colors.lightgray};
+      background-color: ${(props) => props.theme.colors.lightgray};
     }
 
     &:active {
-      background-color: ${props => props.theme.colors.gray};
+      background-color: ${(props) => props.theme.colors.gray};
     }
   }
 `;
@@ -67,12 +67,12 @@ DropdownWrapper.defaultProps = {
     colors: {
       white: "#ffffff",
       gray: "#aaaaaa",
-      lightgray: "#eeeeee"
+      lightgray: "#eeeeee",
     },
     sizes: {
       border: {
-        radius: "3px"
-      }
-    }
-  }
+        radius: "3px",
+      },
+    },
+  },
 };

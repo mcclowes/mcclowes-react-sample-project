@@ -12,14 +12,14 @@ import "./modal.css";
 
 if (process.env.NODE_ENV !== "test") ReactModal.setAppElement("#root");
 
-const Modal = props => {
+const Modal = (props) => {
   const { children, doClose, open, closeIcon, trigger } = props;
 
   return (
     <>
       {trigger && trigger}
 
-      <div onClick={e => e.stopPropagation()}>
+      <div onClick={(e) => e.stopPropagation()}>
         <ReactModal
           isOpen={open}
           closeTimeoutMS={400}
@@ -49,7 +49,7 @@ Modal.propTypes = {
   closeIcon: PropTypes.bool,
   doClose: PropTypes.func,
   open: PropTypes.bool,
-  trigger: PropTypes.any
+  trigger: PropTypes.any,
 };
 
 export default Modal;
