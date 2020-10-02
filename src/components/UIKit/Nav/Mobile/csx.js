@@ -54,7 +54,7 @@ const NavBar = styled.div`
 
   ${BackWrapper},
   ${LogoWrapper} {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Cantarell", sans-serif;
     text-decoration: none;
     color: white;
 
