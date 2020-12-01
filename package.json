@@ -21,7 +21,7 @@
     "prettier": "^2.1.2",
     "pretty-quick": "^3.1.0",
     "puppeteer": "^5.5.0",
-    "react-screenshot-test": "^2.1.1"
+    "react-screenshot-test": "^2.2.2"
   },
   "scripts": {
     "circleci:validate": "circleci config validate",
