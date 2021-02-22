@@ -14,7 +14,7 @@ exports[`Text Header renders default component 1`] = `
       },
       "attrs": Array [],
       "componentStyle": ComponentStyle {
-        "componentId": "csx__Paragraph-sc-5c5e0o-1",
+        "componentId": "csx__Paragraph-sc-7rfchg-1",
         "isStatic": false,
         "rules": Array [
           "color:",
@@ -25,7 +25,7 @@ exports[`Text Header renders default component 1`] = `
       "displayName": "csx__Paragraph",
       "foldedComponentIds": Array [],
       "render": [Function],
-      "styledComponentId": "csx__Paragraph-sc-5c5e0o-1",
+      "styledComponentId": "csx__Paragraph-sc-7rfchg-1",
       "target": "p",
       "toString": [Function],
       "usesTheme": true,
@@ -60,7 +60,7 @@ exports[`Text Text renders default component 1`] = `
       },
       "attrs": Array [],
       "componentStyle": ComponentStyle {
-        "componentId": "csx__Paragraph-sc-5c5e0o-1",
+        "componentId": "csx__Paragraph-sc-7rfchg-1",
         "isStatic": false,
         "rules": Array [
           "color:",
@@ -71,7 +71,7 @@ exports[`Text Text renders default component 1`] = `
       "displayName": "csx__Paragraph",
       "foldedComponentIds": Array [],
       "render": [Function],
-      "styledComponentId": "csx__Paragraph-sc-5c5e0o-1",
+      "styledComponentId": "csx__Paragraph-sc-7rfchg-1",
       "target": "p",
       "toString": [Function],
       "usesTheme": true,
@@ -106,7 +106,7 @@ exports[`Text Text renders default component 2`] = `
       },
       "attrs": Array [],
       "componentStyle": ComponentStyle {
-        "componentId": "csx__Paragraph-sc-5c5e0o-1",
+        "componentId": "csx__Paragraph-sc-7rfchg-1",
         "isStatic": false,
         "rules": Array [
           "color:",
@@ -117,7 +117,7 @@ exports[`Text Text renders default component 2`] = `
       "displayName": "csx__Paragraph",
       "foldedComponentIds": Array [],
       "render": [Function],
-      "styledComponentId": "csx__Paragraph-sc-5c5e0o-1",
+      "styledComponentId": "csx__Paragraph-sc-7rfchg-1",
       "target": "p",
       "toString": [Function],
       "usesTheme": true,
@@ -152,7 +152,7 @@ exports[`Text renders default component 1`] = `
       },
       "attrs": Array [],
       "componentStyle": ComponentStyle {
-        "componentId": "csx__Paragraph-sc-5c5e0o-1",
+        "componentId": "csx__Paragraph-sc-7rfchg-1",
         "isStatic": false,
         "rules": Array [
           "color:",
@@ -163,7 +163,7 @@ exports[`Text renders default component 1`] = `
       "displayName": "csx__Paragraph",
       "foldedComponentIds": Array [],
       "render": [Function],
-      "styledComponentId": "csx__Paragraph-sc-5c5e0o-1",
+      "styledComponentId": "csx__Paragraph-sc-7rfchg-1",
       "target": "p",
       "toString": [Function],
       "usesTheme": true,

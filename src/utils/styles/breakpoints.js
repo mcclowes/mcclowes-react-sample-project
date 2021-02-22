@@ -2,6 +2,8 @@
 /************** breakpoints ***************/
 /******************************************/
 
+export const breakpointSizes = ["xSmall", "small", "medium", "large", "xLarge"];
+
 const breakpoints = {
   xSmall: {
     min: "0px",
@@ -25,7 +27,7 @@ const breakpoints = {
   },
 };
 
-export const breakpoint = (size, cap, styles) => {
+export const breakpoint = (size, cap) => {
   let rules = {
     max: `(max-width: ${breakpoints[size].max})`,
     min: `(min-width: ${breakpoints[size].min})`,
@@ -35,8 +37,6 @@ export const breakpoint = (size, cap, styles) => {
   rules.only = `${rules.max} and ${rules.min}`;
 
   return `
-    @media ${rules[cap]} {
-      ${styles};
-    }
+    @media ${rules[cap]}
   `;
 };

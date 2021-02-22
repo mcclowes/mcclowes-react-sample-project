@@ -8,7 +8,7 @@ This project includes:
 - Useful dependencies
 - Reasonable project structure
 - Examples of dumb components (`Dumb`) and smart, controlled components (`Smart`)
-- UIKit with useful simple components
+- Primitives with useful simple components
 - Simple CircleCI configuration
 
 ## Demo
@@ -41,13 +41,13 @@ Or, for watch mode:
 
 `npm run test:watch`
 
-## UIKit
+## Primitives
 
-This repo comes equipped with a few simple customisable components, in the UIKit directory. You can delete all/as many as you wish, but they are included as they offer a more customisable and flexible alternative to npm packages.
+This repo comes equipped with a few simple customisable components, in the Primitives directory. You can delete all/as many as you wish, but they are included as they offer a more customisable and flexible alternative to npm packages.
 
 ### Storybook
 
-These UIKit components can be viewed by running:
+These Primitives components can be viewed by running:
 
 `npm run storybook`
 
