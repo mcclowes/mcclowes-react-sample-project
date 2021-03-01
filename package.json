@@ -13,7 +13,7 @@
     "styled-components": "^4.4.0"
   },
   "devDependencies": {
-    "@storybook/react": "^6.0.28",
+    "@storybook/react": "^6.1.20",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.5",
     "enzyme-to-json": "^3.6.1",
