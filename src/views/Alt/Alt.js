@@ -1,6 +1,6 @@
 import Page from "../../components/Page";
 import React from "react";
-import { Text } from "../../components/UIKit";
+import { Text } from "../../components/Primitives";
 
 const Alt = (props) => {
   return (

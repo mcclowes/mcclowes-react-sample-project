@@ -7,10 +7,7 @@ export const ActionsWrapper = styled.div`
   padding: 0.5em;
   border-top: 1px solid ${(props) => props.theme.colors.lightgray};
 
-  ${styles.breakpoints.breakpoint(
-    "small",
-    "max",
-    `
+  ${styles.breakpoints.breakpoint("small", "max")} {
     flex-direction: column;
     flex-flow: column-reverse;
 
@@ -23,8 +20,7 @@ export const ActionsWrapper = styled.div`
         text-align: center;
       }
     }
-  `
-  )}
+  }
 `;
 
 ActionsWrapper.defaultProps = {

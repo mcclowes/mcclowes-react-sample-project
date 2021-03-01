@@ -7,7 +7,7 @@ exports[`Breakpoint renders component 1`] = `
       "$$typeof": Symbol(react.forward_ref),
       "attrs": Array [],
       "componentStyle": ComponentStyle {
-        "componentId": "csx__Breakpoint-sc-15987h0-0",
+        "componentId": "csx__Breakpoint-sc-16ry0sm-0",
         "isStatic": false,
         "rules": Array [
           [Function],
@@ -16,8 +16,11 @@ exports[`Breakpoint renders component 1`] = `
       },
       "displayName": "csx__Breakpoint",
       "foldedComponentIds": Array [],
+      "propTypes": Object {
+        "sizes": [Function],
+      },
       "render": [Function],
-      "styledComponentId": "csx__Breakpoint-sc-15987h0-0",
+      "styledComponentId": "csx__Breakpoint-sc-16ry0sm-0",
       "target": "div",
       "toString": [Function],
       "usesTheme": false,
@@ -38,7 +41,7 @@ exports[`Breakpoint renders component with sizes 1`] = `
       "$$typeof": Symbol(react.forward_ref),
       "attrs": Array [],
       "componentStyle": ComponentStyle {
-        "componentId": "csx__Breakpoint-sc-15987h0-0",
+        "componentId": "csx__Breakpoint-sc-16ry0sm-0",
         "isStatic": false,
         "rules": Array [
           [Function],
@@ -47,8 +50,11 @@ exports[`Breakpoint renders component with sizes 1`] = `
       },
       "displayName": "csx__Breakpoint",
       "foldedComponentIds": Array [],
+      "propTypes": Object {
+        "sizes": [Function],
+      },
       "render": [Function],
-      "styledComponentId": "csx__Breakpoint-sc-15987h0-0",
+      "styledComponentId": "csx__Breakpoint-sc-16ry0sm-0",
       "target": "div",
       "toString": [Function],
       "usesTheme": false,

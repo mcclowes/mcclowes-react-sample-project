@@ -1,6 +1,6 @@
 import React from "react";
 import { SmartWrapper, SmartContent } from "./csx";
-import { Button, Text, Padded } from "../UIKit";
+import { Button, Text, Padded } from "../Primitives";
 
 const Smart = (props) => {
   const { children, active, setActive } = props;

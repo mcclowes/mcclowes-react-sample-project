@@ -1,5 +1,5 @@
 import React from "react";
-import NavUtil from "../../components/UIKit/Nav";
+import NavUtil from "../../components/Primitives/Nav";
 
 const LINKS = [
   {

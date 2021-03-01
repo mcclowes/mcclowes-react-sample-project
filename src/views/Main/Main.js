@@ -2,7 +2,7 @@ import Dumb from "../../components/Dumb";
 import React from "react";
 import Page from "../../components/Page";
 import Smart from "../../components/Smart";
-import { Text } from "../../components/UIKit";
+import { Text } from "../../components/Primitives";
 
 const Main = (props) => {
   return (
